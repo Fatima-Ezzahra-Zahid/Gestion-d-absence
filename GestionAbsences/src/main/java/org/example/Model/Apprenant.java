@@ -1,4 +1,4 @@
 package org.example.Model;
 
-public class Apprenant extends Users{
+public class Apprenant extends User {
 }

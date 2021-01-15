@@ -1,4 +1,4 @@
 package org.example.Model;
 
-public class Formateur extends Users{
+public class Formateur extends User {
 }
