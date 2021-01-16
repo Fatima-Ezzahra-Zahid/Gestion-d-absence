@@ -1,176 +1,167 @@
+-- phpMyAdmin SQL Dump
+-- version 4.9.2
+-- https://www.phpmyadmin.net/
+--
+-- Hôte : 127.0.0.1:3306
+-- Généré le :  sam. 16 jan. 2021 à 01:23
+-- Version du serveur :  10.4.10-MariaDB
+-- Version de PHP :  7.3.12
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
+START TRANSACTION;
+SET time_zone = "+00:00";
 
 
-create database gestiondabsence;
-use gestiondabsence;
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
 
+--
+-- Base de données :  `gestiondabsence`
+--
 
-CREATE TABLE `user` (
-  `id_user` int(11) NOT NULL,
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `absence`
+--
+
+DROP TABLE IF EXISTS `absence`;
+CREATE TABLE IF NOT EXISTS `absence` (
+  `id_absence` int(11) NOT NULL AUTO_INCREMENT,
+  `absences` decimal(8,0) DEFAULT NULL,
+  `date` datetime DEFAULT NULL,
+  `justification` varchar(250) DEFAULT 'Non justifiée',
+  `id_appr` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id_absence`),
+  KEY `FK_Association_1` (`id_appr`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `apprenant`
+--
+
+DROP TABLE IF EXISTS `apprenant`;
+CREATE TABLE IF NOT EXISTS `apprenant` (
+  `id_apprenant` int(11) NOT NULL AUTO_INCREMENT,
+  `id_sp` int(11) DEFAULT NULL,
+  `id_salle` int(11) DEFAULT NULL,
+  `id_user` int(11) DEFAULT NULL,
+  `id_prom` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id_apprenant`),
+  KEY `id_sp` (`id_sp`),
+  KEY `id_salle` (`id_salle`),
+  KEY `id_user` (`id_user`),
+  KEY `id_prom` (`id_prom`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `formateur`
+--
+
+DROP TABLE IF EXISTS `formateur`;
+CREATE TABLE IF NOT EXISTS `formateur` (
+  `id_formateur` int(11) NOT NULL AUTO_INCREMENT,
+  `id_sp` int(11) DEFAULT NULL,
+  `id_salle` int(11) DEFAULT NULL,
+  `id_user` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id_formateur`),
+  KEY `id_sp` (`id_sp`),
+  KEY `id_salle` (`id_salle`),
+  KEY `id_user` (`id_user`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `promo`
+--
+
+DROP TABLE IF EXISTS `promo`;
+CREATE TABLE IF NOT EXISTS `promo` (
+  `id_promo` int(11) NOT NULL AUTO_INCREMENT,
+  `anneeDePromo` datetime DEFAULT NULL,
+  PRIMARY KEY (`id_promo`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `salle`
+--
+
+DROP TABLE IF EXISTS `salle`;
+CREATE TABLE IF NOT EXISTS `salle` (
+  `id_salle` int(11) NOT NULL AUTO_INCREMENT,
+  `nomDeSalle` varchar(254) DEFAULT NULL,
+  PRIMARY KEY (`id_salle`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `specialite`
+--
+
+DROP TABLE IF EXISTS `specialite`;
+CREATE TABLE IF NOT EXISTS `specialite` (
+  `id_specialite` int(11) NOT NULL AUTO_INCREMENT,
+  `nom` varchar(254) DEFAULT NULL,
+  `numbreDeModule` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id_specialite`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `user`
+--
+
+DROP TABLE IF EXISTS `user`;
+CREATE TABLE IF NOT EXISTS `user` (
+  `id_user` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(255) NOT NULL,
   `password` varchar(32) NOT NULL,
   `mail` varchar(255) NOT NULL,
   `tele` varchar(10) NOT NULL,
   `dateDeNaissance` date NOT NULL,
-  `role` varchar(250)
+  `role` varchar(250) DEFAULT NULL,
+  PRIMARY KEY (`id_user`),
+  UNIQUE KEY `id_user_UNIQUE` (`id_user`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
-ALTER TABLE `user`
-  ADD PRIMARY KEY (`id_user`),
-  ADD UNIQUE KEY `id_user_UNIQUE` (`id_user`);
-  
-ALTER TABLE `user`
-  MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT;
-  
-  
-  
-    CREATE TABLE `specialite` (
-  `id_specialite` int(11) NOT NULL,
-  `nom` varchar(254) DEFAULT NULL,
-  `numbreDeModule` int(11) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+--
+-- Contraintes pour les tables déchargées
+--
 
-ALTER TABLE `specialite`
-  ADD PRIMARY KEY (`id_specialite`);
-  
-ALTER TABLE `specialite`
-  MODIFY `id_specialite` int(11) NOT NULL AUTO_INCREMENT;
-
-CREATE TABLE `salle` (
-  `id_salle` int(11) NOT NULL,
-  `nomDeSalle` varchar(254) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
-ALTER TABLE `salle`
-  ADD PRIMARY KEY (`id_salle`);
-  
-
-ALTER TABLE `salle`
-  MODIFY `id_salle` int(11) NOT NULL AUTO_INCREMENT;
-
-
-CREATE TABLE `promo` (
-  `id_promo` int(11) NOT NULL,
-  `anneeDePromo` datetime DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
-ALTER TABLE `promo`
-  ADD PRIMARY KEY (`id_promo`);
-  
-  ALTER TABLE `promo`
-  MODIFY `id_promo` int(11) NOT NULL AUTO_INCREMENT;
-
-CREATE TABLE apprenant (
-  id_apprenant int(11) NOT NULL primary key auto_increment,
-  id_sp int(11),
-  id_salle int(11),
-  id_user int(11),
-  id_prom int(11),
-  foreign key(id_sp) references specialite(id_specialite),
-  foreign key(id_salle) references salle(id_salle),
-  foreign key(id_user) references user(id_user),
-  foreign key(id_prom) references promo(id_promo)
-  
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
-
-
-  
-
-CREATE TABLE `absence` (
-  `id_absence` int(11) NOT NULL,
-  `absences` decimal(8,0) DEFAULT NULL,
-  `date` datetime DEFAULT NULL,
-  `justification` varchar(250) DEFAULT 'Non justifiée',
-  `id_appr` int(11) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
+--
+-- Contraintes pour la table `absence`
+--
 ALTER TABLE `absence`
-  ADD PRIMARY KEY (`id_absence`),
-  ADD KEY `FK_Association_1` (`id_appr`);
-  
-  ALTER TABLE `absence`
-  MODIFY `id_absence` int(11) NOT NULL AUTO_INCREMENT;
-  
-  ALTER TABLE `absence`
   ADD CONSTRAINT `FK_Association_1` FOREIGN KEY (`id_appr`) REFERENCES `apprenant` (`id_apprenant`) ON DELETE CASCADE ON UPDATE CASCADE;
-  
-
-  
-
-
-CREATE TABLE `formateur` (
-  `id_formateur` int(11) NOT NULL primary key auto_increment,
-  id_sp int(11),
-  id_salle int(11),
-  id_user int(11),
-  foreign key(id_sp) references specialite(id_specialite) ON DELETE CASCADE ON UPDATE CASCADE,
-  foreign key(id_salle) references salle(id_salle) ON DELETE CASCADE ON UPDATE CASCADE,
-  foreign key(id_user) references user(id_user) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-ALTER TABLE `secretaire`
-  ADD PRIMARY KEY (`id_secretaire`);
-
-
-
-
-
-
-ALTER TABLE `promo`
-  MODIFY `id_promo` int(11) NOT NULL AUTO_INCREMENT;
-
-
-
-
-
-
-
-
-ALTER TABLE `specialite`
-  MODIFY `id_specialite` int(11) NOT NULL AUTO_INCREMENT;
-
-
-ALTER TABLE `promo`
-  ADD CONSTRAINT `FK_Association_3` FOREIGN KEY (`id_appr`) REFERENCES `apprenant` (`id_apprenant`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
--- Constraints for table `salle`
+-- Contraintes pour la table `apprenant`
 --
-ALTER TABLE `salle`
-  ADD CONSTRAINT `FK_Association_2` FOREIGN KEY (`id_forma`) REFERENCES `formateur` (`id_formateur`) ON DELETE CASCADE ON UPDATE CASCADE;
+ALTER TABLE `apprenant`
+  ADD CONSTRAINT `apprenant_ibfk_1` FOREIGN KEY (`id_sp`) REFERENCES `specialite` (`id_specialite`),
+  ADD CONSTRAINT `apprenant_ibfk_2` FOREIGN KEY (`id_salle`) REFERENCES `salle` (`id_salle`),
+  ADD CONSTRAINT `apprenant_ibfk_3` FOREIGN KEY (`id_user`) REFERENCES `user` (`id_user`),
+  ADD CONSTRAINT `apprenant_ibfk_4` FOREIGN KEY (`id_prom`) REFERENCES `promo` (`id_promo`);
 
 --
--- Constraints for table `specialite`
+-- Contraintes pour la table `formateur`
 --
-ALTER TABLE `specialite`
-  ADD CONSTRAINT `FK_Association_4` FOREIGN KEY (`id_appr`) REFERENCES `apprenant` (`id_apprenant`) ON DELETE CASCADE ON UPDATE CASCADE;
+ALTER TABLE `formateur`
+  ADD CONSTRAINT `formateur_ibfk_1` FOREIGN KEY (`id_sp`) REFERENCES `specialite` (`id_specialite`) ON DELETE CASCADE ON UPDATE CASCADE,
+  ADD CONSTRAINT `formateur_ibfk_2` FOREIGN KEY (`id_salle`) REFERENCES `salle` (`id_salle`) ON DELETE CASCADE ON UPDATE CASCADE,
+  ADD CONSTRAINT `formateur_ibfk_3` FOREIGN KEY (`id_user`) REFERENCES `user` (`id_user`) ON DELETE CASCADE ON UPDATE CASCADE;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
