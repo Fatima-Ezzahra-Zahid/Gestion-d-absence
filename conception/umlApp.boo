@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?PowerDesigner AppLocale="UTF16" ID="{3E821D0D-0C4C-4148-89C6-04B52D9DF047}" Label="" LastModificationDate="1610747721" Name="Class Diagram_1" Objects="121" Symbols="16" Target="Analyse" TargetLink="Reference" Type="{18112060-1A4B-11D1-83D9-444553540000}" signature="CLD_OBJECT_MODEL" version="15.1.0.2850"?>
+<?PowerDesigner AppLocale="UTF16" ID="{3E821D0D-0C4C-4148-89C6-04B52D9DF047}" Label="" LastModificationDate="1610758236" Name="Class Diagram_1" Objects="128" Symbols="22" Target="Analyse" TargetLink="Reference" Type="{18112060-1A4B-11D1-83D9-444553540000}" signature="CLD_OBJECT_MODEL" version="15.1.0.2850"?>
 <!-- Veuillez ne pas modifier ce fichier -->
 
 <Model xmlns:a="attribute" xmlns:c="collection" xmlns:o="object">
@@ -12,7 +12,7 @@
 <a:Code>Class_Diagram_1</a:Code>
 <a:CreationDate>1610641404</a:CreationDate>
 <a:Creator>Youcode</a:Creator>
-<a:ModificationDate>1610747628</a:ModificationDate>
+<a:ModificationDate>1610747999</a:ModificationDate>
 <a:Modifier>yc</a:Modifier>
 <a:PackageOptionsText>[FolderOptions]
 
@@ -3057,7 +3057,7 @@ NameToCode=No</a:ModelOptionsText>
 <a:Code>ClassDiagram_1</a:Code>
 <a:CreationDate>1610641404</a:CreationDate>
 <a:Creator>Youcode</a:Creator>
-<a:ModificationDate>1610746156</a:ModificationDate>
+<a:ModificationDate>1610747999</a:ModificationDate>
 <a:Modifier>yc</a:Modifier>
 <a:DisplayPreferences>[DisplayPreferences]
 
@@ -3535,7 +3535,7 @@ MULA 0 Arial,8,N</a:FontList>
 <o:AssociationSymbol Id="o18">
 <a:CreationDate>1610643153</a:CreationDate>
 <a:ModificationDate>1610746173</a:ModificationDate>
-<a:Rect>((-5061,-27360), (1778,-9046))</a:Rect>
+<a:Rect>((-5136,-27360), (2153,-9046))</a:Rect>
 <a:ListOfPoints>((-3187,-27360),(-3187,-12359),(654,-12359),(654,-9046))</a:ListOfPoints>
 <a:CornerStyle>2</a:CornerStyle>
 <a:ArrowStyle>8</a:ArrowStyle>
@@ -3553,70 +3553,7 @@ MULA 0 Arial,8,N</a:FontList>
 <o:Association Ref="o20"/>
 </c:Object>
 </o:AssociationSymbol>
-<o:DependencySymbol Id="o21">
-<a:CreationDate>1610699951</a:CreationDate>
-<a:ModificationDate>1610746177</a:ModificationDate>
-<a:Rect>((-31440,23879), (-8865,25763))</a:Rect>
-<a:ListOfPoints>((-31440,24488),(-18248,24488),(-18248,25763),(-8865,25763))</a:ListOfPoints>
-<a:CornerStyle>2</a:CornerStyle>
-<a:ArrowStyle>8</a:ArrowStyle>
-<a:LineColor>4194432</a:LineColor>
-<a:DashStyle>2</a:DashStyle>
-<a:ShadowColor>12632256</a:ShadowColor>
-<a:FontList>DISPNAME 0 Arial,8,N</a:FontList>
-<c:SourceSymbol>
-<o:ClassSymbol Ref="o13"/>
-</c:SourceSymbol>
-<c:DestinationSymbol>
-<o:ClassSymbol Ref="o22"/>
-</c:DestinationSymbol>
-<c:Object>
-<o:Dependency Ref="o23"/>
-</c:Object>
-</o:DependencySymbol>
-<o:DependencySymbol Id="o24">
-<a:CreationDate>1610699952</a:CreationDate>
-<a:ModificationDate>1610746177</a:ModificationDate>
-<a:Rect>((24,-4837), (4898,19876))</a:Rect>
-<a:ListOfPoints>((963,-4837),(963,8548),(3960,8548),(3960,19876))</a:ListOfPoints>
-<a:CornerStyle>2</a:CornerStyle>
-<a:ArrowStyle>8</a:ArrowStyle>
-<a:LineColor>4194432</a:LineColor>
-<a:DashStyle>2</a:DashStyle>
-<a:ShadowColor>12632256</a:ShadowColor>
-<a:FontList>DISPNAME 0 Arial,8,N</a:FontList>
-<c:SourceSymbol>
-<o:ClassSymbol Ref="o9"/>
-</c:SourceSymbol>
-<c:DestinationSymbol>
-<o:ClassSymbol Ref="o22"/>
-</c:DestinationSymbol>
-<c:Object>
-<o:Dependency Ref="o25"/>
-</c:Object>
-</o:DependencySymbol>
-<o:DependencySymbol Id="o26">
-<a:CreationDate>1610699954</a:CreationDate>
-<a:ModificationDate>1610746177</a:ModificationDate>
-<a:Rect>((21810,17401), (36172,25863))</a:Rect>
-<a:ListOfPoints>((33735,17401),(33735,25276),(21810,25276))</a:ListOfPoints>
-<a:CornerStyle>2</a:CornerStyle>
-<a:ArrowStyle>8</a:ArrowStyle>
-<a:LineColor>4194432</a:LineColor>
-<a:DashStyle>2</a:DashStyle>
-<a:ShadowColor>12632256</a:ShadowColor>
-<a:FontList>DISPNAME 0 Arial,8,N</a:FontList>
-<c:SourceSymbol>
-<o:ClassSymbol Ref="o27"/>
-</c:SourceSymbol>
-<c:DestinationSymbol>
-<o:ClassSymbol Ref="o22"/>
-</c:DestinationSymbol>
-<c:Object>
-<o:Dependency Ref="o28"/>
-</c:Object>
-</o:DependencySymbol>
-<o:AssociationSymbol Id="o29">
+<o:AssociationSymbol Id="o21">
 <a:CreationDate>1610746156</a:CreationDate>
 <a:ModificationDate>1610746173</a:ModificationDate>
 <a:Rect>((-27974,-24161), (-15599,23149))</a:Rect>
@@ -3634,10 +3571,90 @@ MULA 0 Arial,8,N</a:FontList>
 <o:ClassSymbol Ref="o19"/>
 </c:DestinationSymbol>
 <c:Object>
-<o:Association Ref="o30"/>
+<o:Association Ref="o22"/>
 </c:Object>
 </o:AssociationSymbol>
-<o:ClassSymbol Id="o22">
+<o:GeneralizationSymbol Id="o23">
+<a:CreationDate>1610747911</a:CreationDate>
+<a:ModificationDate>1610747911</a:ModificationDate>
+<a:Rect>((-30784,32565), (-9499,41145))</a:Rect>
+<a:ListOfPoints>((-30784,41145),(-30784,32565),(-9499,32565))</a:ListOfPoints>
+<a:CornerStyle>2</a:CornerStyle>
+<a:ArrowStyle>7</a:ArrowStyle>
+<a:LineColor>4194432</a:LineColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>DISPNAME 0 Arial,8,N</a:FontList>
+<c:SourceSymbol>
+<o:ClassSymbol Ref="o24"/>
+</c:SourceSymbol>
+<c:DestinationSymbol>
+<o:ClassSymbol Ref="o25"/>
+</c:DestinationSymbol>
+<c:Object>
+<o:Generalization Ref="o26"/>
+</c:Object>
+</o:GeneralizationSymbol>
+<o:GeneralizationSymbol Id="o27">
+<a:CreationDate>1610747970</a:CreationDate>
+<a:ModificationDate>1610747970</a:ModificationDate>
+<a:Rect>((-25092,25140), (-11232,26790))</a:Rect>
+<a:ListOfPoints>((-25092,25140),(-18248,25140),(-18248,26790),(-11232,26790))</a:ListOfPoints>
+<a:CornerStyle>2</a:CornerStyle>
+<a:ArrowStyle>7</a:ArrowStyle>
+<a:LineColor>4194432</a:LineColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>DISPNAME 0 Arial,8,N</a:FontList>
+<c:SourceSymbol>
+<o:ClassSymbol Ref="o13"/>
+</c:SourceSymbol>
+<c:DestinationSymbol>
+<o:ClassSymbol Ref="o25"/>
+</c:DestinationSymbol>
+<c:Object>
+<o:Generalization Ref="o28"/>
+</c:Object>
+</o:GeneralizationSymbol>
+<o:GeneralizationSymbol Id="o29">
+<a:CreationDate>1610747973</a:CreationDate>
+<a:ModificationDate>1610747973</a:ModificationDate>
+<a:Rect>((21934,21345), (39506,32318))</a:Rect>
+<a:ListOfPoints>((39506,21345),(39506,32318),(21934,32318))</a:ListOfPoints>
+<a:CornerStyle>2</a:CornerStyle>
+<a:ArrowStyle>7</a:ArrowStyle>
+<a:LineColor>4194432</a:LineColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>DISPNAME 0 Arial,8,N</a:FontList>
+<c:SourceSymbol>
+<o:ClassSymbol Ref="o30"/>
+</c:SourceSymbol>
+<c:DestinationSymbol>
+<o:ClassSymbol Ref="o25"/>
+</c:DestinationSymbol>
+<c:Object>
+<o:Generalization Ref="o31"/>
+</c:Object>
+</o:GeneralizationSymbol>
+<o:GeneralizationSymbol Id="o32">
+<a:CreationDate>1610747977</a:CreationDate>
+<a:ModificationDate>1610747977</a:ModificationDate>
+<a:Rect>((-3935,-3314), (-2935,20199))</a:Rect>
+<a:ListOfPoints>((-3435,-3314),(-3435,20199))</a:ListOfPoints>
+<a:CornerStyle>2</a:CornerStyle>
+<a:ArrowStyle>7</a:ArrowStyle>
+<a:LineColor>4194432</a:LineColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>DISPNAME 0 Arial,8,N</a:FontList>
+<c:SourceSymbol>
+<o:ClassSymbol Ref="o9"/>
+</c:SourceSymbol>
+<c:DestinationSymbol>
+<o:ClassSymbol Ref="o25"/>
+</c:DestinationSymbol>
+<c:Object>
+<o:Generalization Ref="o33"/>
+</c:Object>
+</o:GeneralizationSymbol>
+<o:ClassSymbol Id="o25">
 <a:CreationDate>1610641419</a:CreationDate>
 <a:ModificationDate>1610746177</a:ModificationDate>
 <a:IconMode>-1</a:IconMode>
@@ -3659,7 +3676,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:GradientEndColor>16777215</a:GradientEndColor>
 <a:ManuallyResized>1</a:ManuallyResized>
 <c:Object>
-<o:Class Ref="o31"/>
+<o:Class Ref="o34"/>
 </c:Object>
 </o:ClassSymbol>
 <o:ClassSymbol Id="o13">
@@ -3684,10 +3701,10 @@ LABL 0 Arial,8,N</a:FontList>
 <a:GradientEndColor>16777215</a:GradientEndColor>
 <a:ManuallyResized>1</a:ManuallyResized>
 <c:Object>
-<o:Class Ref="o32"/>
+<o:Class Ref="o35"/>
 </c:Object>
 </o:ClassSymbol>
-<o:ClassSymbol Id="o27">
+<o:ClassSymbol Id="o30">
 <a:CreationDate>1610641832</a:CreationDate>
 <a:ModificationDate>1610658187</a:ModificationDate>
 <a:IconMode>-1</a:IconMode>
@@ -3709,7 +3726,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:GradientEndColor>16777215</a:GradientEndColor>
 <a:ManuallyResized>1</a:ManuallyResized>
 <c:Object>
-<o:Class Ref="o33"/>
+<o:Class Ref="o36"/>
 </c:Object>
 </o:ClassSymbol>
 <o:ClassSymbol Id="o9">
@@ -3732,7 +3749,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:GradientFillMode>65</a:GradientFillMode>
 <a:GradientEndColor>16777215</a:GradientEndColor>
 <c:Object>
-<o:Class Ref="o34"/>
+<o:Class Ref="o37"/>
 </c:Object>
 </o:ClassSymbol>
 <o:ClassSymbol Id="o8">
@@ -3755,7 +3772,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:GradientFillMode>65</a:GradientFillMode>
 <a:GradientEndColor>16777215</a:GradientEndColor>
 <c:Object>
-<o:Class Ref="o35"/>
+<o:Class Ref="o38"/>
 </c:Object>
 </o:ClassSymbol>
 <o:ClassSymbol Id="o12">
@@ -3778,7 +3795,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:GradientFillMode>65</a:GradientFillMode>
 <a:GradientEndColor>16777215</a:GradientEndColor>
 <c:Object>
-<o:Class Ref="o36"/>
+<o:Class Ref="o39"/>
 </c:Object>
 </o:ClassSymbol>
 <o:ClassSymbol Id="o16">
@@ -3803,7 +3820,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:GradientEndColor>16777215</a:GradientEndColor>
 <a:ManuallyResized>1</a:ManuallyResized>
 <c:Object>
-<o:Class Ref="o37"/>
+<o:Class Ref="o40"/>
 </c:Object>
 </o:ClassSymbol>
 <o:ClassSymbol Id="o19">
@@ -3826,7 +3843,32 @@ LABL 0 Arial,8,N</a:FontList>
 <a:GradientFillMode>65</a:GradientFillMode>
 <a:GradientEndColor>16777215</a:GradientEndColor>
 <c:Object>
-<o:Class Ref="o38"/>
+<o:Class Ref="o41"/>
+</c:Object>
+</o:ClassSymbol>
+<o:ClassSymbol Id="o24">
+<a:CreationDate>1610747836</a:CreationDate>
+<a:ModificationDate>1610747863</a:ModificationDate>
+<a:IconMode>-1</a:IconMode>
+<a:Rect>((-40634,39001), (-30784,44377))</a:Rect>
+<a:AutoAdjustToText>0</a:AutoAdjustToText>
+<a:LineColor>128</a:LineColor>
+<a:FillColor>8637161</a:FillColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>STRN 0 Arial,8,N
+DISPNAME 0 Arial,8,N
+CNTR 0 Arial,8,N
+Attributes 0 Arial,8,N
+ClassPrimaryAttribute 0 Arial,8,U
+Operations 0 Arial,8,N
+InnerClassifiers 0 Arial,8,N
+LABL 0 Arial,8,N</a:FontList>
+<a:BrushStyle>6</a:BrushStyle>
+<a:GradientFillMode>65</a:GradientFillMode>
+<a:GradientEndColor>16777215</a:GradientEndColor>
+<a:ManuallyResized>1</a:ManuallyResized>
+<c:Object>
+<o:Class Ref="o42"/>
 </c:Object>
 </o:ClassSymbol>
 </c:Symbols>
@@ -3836,7 +3878,7 @@ LABL 0 Arial,8,N</a:FontList>
 <o:ClassDiagram Ref="o6"/>
 </c:DefaultDiagram>
 <c:Classes>
-<o:Class Id="o31">
+<o:Class Id="o34">
 <a:ObjectID>1494E43F-71E5-4882-A809-5D9CD683B4DC</a:ObjectID>
 <a:Name>Personne</a:Name>
 <a:Code>Personne</a:Code>
@@ -3849,7 +3891,7 @@ Date: 1/14/2021;
 Author: Anassifi;</a:Comment>
 <a:UseParentNamespace>0</a:UseParentNamespace>
 <c:Attributes>
-<o:Attribute Id="o39">
+<o:Attribute Id="o43">
 <a:ObjectID>5F56854F-4DF8-46FA-B13D-2F4C02028610</a:ObjectID>
 <a:Name>id_personne</a:Name>
 <a:Code>id_personne</a:Code>
@@ -3860,7 +3902,7 @@ Author: Anassifi;</a:Comment>
 <a:DataType>int</a:DataType>
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 </o:Attribute>
-<o:Attribute Id="o40">
+<o:Attribute Id="o44">
 <a:ObjectID>D206E2E0-440F-4AB4-9D93-5ADD09D7209F</a:ObjectID>
 <a:Name>name</a:Name>
 <a:Code>name</a:Code>
@@ -3871,7 +3913,7 @@ Author: Anassifi;</a:Comment>
 <a:DataType>String</a:DataType>
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 </o:Attribute>
-<o:Attribute Id="o41">
+<o:Attribute Id="o45">
 <a:ObjectID>E74D0585-D3D0-4693-B00C-A3F96E7ACEEE</a:ObjectID>
 <a:Name>password</a:Name>
 <a:Code>password</a:Code>
@@ -3882,7 +3924,7 @@ Author: Anassifi;</a:Comment>
 <a:DataType>String</a:DataType>
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 </o:Attribute>
-<o:Attribute Id="o42">
+<o:Attribute Id="o46">
 <a:ObjectID>05DF2201-5F9D-43C0-956C-9453525A03BD</a:ObjectID>
 <a:Name>mail</a:Name>
 <a:Code>mail</a:Code>
@@ -3893,7 +3935,7 @@ Author: Anassifi;</a:Comment>
 <a:DataType>String</a:DataType>
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 </o:Attribute>
-<o:Attribute Id="o43">
+<o:Attribute Id="o47">
 <a:ObjectID>55886090-C191-45DF-A195-9037E509A7FF</a:ObjectID>
 <a:Name>tele</a:Name>
 <a:Code>tele</a:Code>
@@ -3904,7 +3946,7 @@ Author: Anassifi;</a:Comment>
 <a:DataType>number</a:DataType>
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 </o:Attribute>
-<o:Attribute Id="o44">
+<o:Attribute Id="o48">
 <a:ObjectID>A1E8B37A-350B-4263-975A-A531DF536EA9</a:ObjectID>
 <a:Name>dateDeNaissance</a:Name>
 <a:Code>dateDeNaissance</a:Code>
@@ -3915,7 +3957,7 @@ Author: Anassifi;</a:Comment>
 <a:DataType>Date</a:DataType>
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 </o:Attribute>
-<o:Attribute Id="o45">
+<o:Attribute Id="o49">
 <a:ObjectID>A90AE030-894B-4E8B-8956-F8D889547355</a:ObjectID>
 <a:Name>role</a:Name>
 <a:Code>role</a:Code>
@@ -3928,7 +3970,7 @@ Author: Anassifi;</a:Comment>
 </o:Attribute>
 </c:Attributes>
 <c:Operations>
-<o:Operation Id="o46">
+<o:Operation Id="o50">
 <a:ObjectID>D520991A-837E-4877-B9FB-082FFA7DA93D</a:ObjectID>
 <a:Name>Personne</a:Name>
 <a:Code>Personne</a:Code>
@@ -3940,10 +3982,10 @@ Author: Anassifi;</a:Comment>
 <a:Automatic>1</a:Automatic>
 <a:TemplateBody>%DefaultBody%</a:TemplateBody>
 <c:InfluentObject>
-<o:Class Ref="o31"/>
+<o:Class Ref="o34"/>
 </c:InfluentObject>
 </o:Operation>
-<o:Operation Id="o47">
+<o:Operation Id="o51">
 <a:ObjectID>44C24F57-3E3C-42CB-9C9C-10C45BC1C5E1</a:ObjectID>
 <a:Name>getid_personne</a:Name>
 <a:Code>getid_personne</a:Code>
@@ -3956,10 +3998,10 @@ Author: Anassifi;</a:Comment>
 <a:Automatic>1</a:Automatic>
 <a:TemplateBody>%DefaultBody%</a:TemplateBody>
 <c:InfluentObject>
-<o:Attribute Ref="o39"/>
+<o:Attribute Ref="o43"/>
 </c:InfluentObject>
 </o:Operation>
-<o:Operation Id="o48">
+<o:Operation Id="o52">
 <a:ObjectID>C029610F-C0E2-4E84-AF15-D352175E21D7</a:ObjectID>
 <a:Name>setid_personne</a:Name>
 <a:Code>setid_personne</a:Code>
@@ -3972,7 +4014,7 @@ Author: Anassifi;</a:Comment>
 <a:Automatic>1</a:Automatic>
 <a:TemplateBody>%DefaultBody%</a:TemplateBody>
 <c:Parameters>
-<o:Parameter Id="o49">
+<o:Parameter Id="o53">
 <a:ObjectID>2517302A-F4C6-4B79-A2AE-0A23D9B27E36</a:ObjectID>
 <a:Name>newId_personne</a:Name>
 <a:Code>newId_personne</a:Code>
@@ -3985,10 +4027,10 @@ Author: Anassifi;</a:Comment>
 </o:Parameter>
 </c:Parameters>
 <c:InfluentObject>
-<o:Attribute Ref="o39"/>
+<o:Attribute Ref="o43"/>
 </c:InfluentObject>
 </o:Operation>
-<o:Operation Id="o50">
+<o:Operation Id="o54">
 <a:ObjectID>C54BF0BB-C70A-419F-B182-1FEADC66D0A2</a:ObjectID>
 <a:Name>getname</a:Name>
 <a:Code>getname</a:Code>
@@ -4001,10 +4043,10 @@ Author: Anassifi;</a:Comment>
 <a:Automatic>1</a:Automatic>
 <a:TemplateBody>%DefaultBody%</a:TemplateBody>
 <c:InfluentObject>
-<o:Attribute Ref="o40"/>
+<o:Attribute Ref="o44"/>
 </c:InfluentObject>
 </o:Operation>
-<o:Operation Id="o51">
+<o:Operation Id="o55">
 <a:ObjectID>6BF007F3-38D9-4E13-9343-C857136D309B</a:ObjectID>
 <a:Name>setname</a:Name>
 <a:Code>setname</a:Code>
@@ -4017,7 +4059,7 @@ Author: Anassifi;</a:Comment>
 <a:Automatic>1</a:Automatic>
 <a:TemplateBody>%DefaultBody%</a:TemplateBody>
 <c:Parameters>
-<o:Parameter Id="o52">
+<o:Parameter Id="o56">
 <a:ObjectID>BD98AE7F-F55C-44D0-9DE9-EC85131CA40F</a:ObjectID>
 <a:Name>newName</a:Name>
 <a:Code>newName</a:Code>
@@ -4030,10 +4072,10 @@ Author: Anassifi;</a:Comment>
 </o:Parameter>
 </c:Parameters>
 <c:InfluentObject>
-<o:Attribute Ref="o40"/>
+<o:Attribute Ref="o44"/>
 </c:InfluentObject>
 </o:Operation>
-<o:Operation Id="o53">
+<o:Operation Id="o57">
 <a:ObjectID>41983487-53E1-4115-AC78-E16C66114D50</a:ObjectID>
 <a:Name>getpassword</a:Name>
 <a:Code>getpassword</a:Code>
@@ -4046,10 +4088,10 @@ Author: Anassifi;</a:Comment>
 <a:Automatic>1</a:Automatic>
 <a:TemplateBody>%DefaultBody%</a:TemplateBody>
 <c:InfluentObject>
-<o:Attribute Ref="o41"/>
+<o:Attribute Ref="o45"/>
 </c:InfluentObject>
 </o:Operation>
-<o:Operation Id="o54">
+<o:Operation Id="o58">
 <a:ObjectID>FBA8FFED-7C9E-425A-B8F5-214612E3FE04</a:ObjectID>
 <a:Name>setpassword</a:Name>
 <a:Code>setpassword</a:Code>
@@ -4062,7 +4104,7 @@ Author: Anassifi;</a:Comment>
 <a:Automatic>1</a:Automatic>
 <a:TemplateBody>%DefaultBody%</a:TemplateBody>
 <c:Parameters>
-<o:Parameter Id="o55">
+<o:Parameter Id="o59">
 <a:ObjectID>F9513D55-3882-4677-8D4F-BD5E8B62FCAD</a:ObjectID>
 <a:Name>newPassword</a:Name>
 <a:Code>newPassword</a:Code>
@@ -4075,10 +4117,10 @@ Author: Anassifi;</a:Comment>
 </o:Parameter>
 </c:Parameters>
 <c:InfluentObject>
-<o:Attribute Ref="o41"/>
+<o:Attribute Ref="o45"/>
 </c:InfluentObject>
 </o:Operation>
-<o:Operation Id="o56">
+<o:Operation Id="o60">
 <a:ObjectID>D2E5A8F4-8FAA-4D81-AC06-58ABDDF26246</a:ObjectID>
 <a:Name>getmail</a:Name>
 <a:Code>getmail</a:Code>
@@ -4091,10 +4133,10 @@ Author: Anassifi;</a:Comment>
 <a:Automatic>1</a:Automatic>
 <a:TemplateBody>%DefaultBody%</a:TemplateBody>
 <c:InfluentObject>
-<o:Attribute Ref="o42"/>
+<o:Attribute Ref="o46"/>
 </c:InfluentObject>
 </o:Operation>
-<o:Operation Id="o57">
+<o:Operation Id="o61">
 <a:ObjectID>716058AD-4F89-41EB-B866-45E469707C6C</a:ObjectID>
 <a:Name>setmail</a:Name>
 <a:Code>setmail</a:Code>
@@ -4107,7 +4149,7 @@ Author: Anassifi;</a:Comment>
 <a:Automatic>1</a:Automatic>
 <a:TemplateBody>%DefaultBody%</a:TemplateBody>
 <c:Parameters>
-<o:Parameter Id="o58">
+<o:Parameter Id="o62">
 <a:ObjectID>702F21C8-5874-4668-A554-C939B63BC852</a:ObjectID>
 <a:Name>newMail</a:Name>
 <a:Code>newMail</a:Code>
@@ -4120,10 +4162,10 @@ Author: Anassifi;</a:Comment>
 </o:Parameter>
 </c:Parameters>
 <c:InfluentObject>
-<o:Attribute Ref="o42"/>
+<o:Attribute Ref="o46"/>
 </c:InfluentObject>
 </o:Operation>
-<o:Operation Id="o59">
+<o:Operation Id="o63">
 <a:ObjectID>88B958BF-2842-49E6-8194-A17486327501</a:ObjectID>
 <a:Name>gettele</a:Name>
 <a:Code>gettele</a:Code>
@@ -4136,10 +4178,10 @@ Author: Anassifi;</a:Comment>
 <a:Automatic>1</a:Automatic>
 <a:TemplateBody>%DefaultBody%</a:TemplateBody>
 <c:InfluentObject>
-<o:Attribute Ref="o43"/>
+<o:Attribute Ref="o47"/>
 </c:InfluentObject>
 </o:Operation>
-<o:Operation Id="o60">
+<o:Operation Id="o64">
 <a:ObjectID>24540013-00EE-4E5B-9EB4-DA13DC34972B</a:ObjectID>
 <a:Name>settele</a:Name>
 <a:Code>settele</a:Code>
@@ -4152,7 +4194,7 @@ Author: Anassifi;</a:Comment>
 <a:Automatic>1</a:Automatic>
 <a:TemplateBody>%DefaultBody%</a:TemplateBody>
 <c:Parameters>
-<o:Parameter Id="o61">
+<o:Parameter Id="o65">
 <a:ObjectID>AB98886E-5A29-4A81-BC8D-CD4A79466B6D</a:ObjectID>
 <a:Name>newTele</a:Name>
 <a:Code>newTele</a:Code>
@@ -4165,10 +4207,10 @@ Author: Anassifi;</a:Comment>
 </o:Parameter>
 </c:Parameters>
 <c:InfluentObject>
-<o:Attribute Ref="o43"/>
+<o:Attribute Ref="o47"/>
 </c:InfluentObject>
 </o:Operation>
-<o:Operation Id="o62">
+<o:Operation Id="o66">
 <a:ObjectID>BB195E1C-3F7A-44DD-A078-8AAB06F074F2</a:ObjectID>
 <a:Name>getdateDeNaissance</a:Name>
 <a:Code>getdateDeNaissance</a:Code>
@@ -4181,10 +4223,10 @@ Author: Anassifi;</a:Comment>
 <a:Automatic>1</a:Automatic>
 <a:TemplateBody>%DefaultBody%</a:TemplateBody>
 <c:InfluentObject>
-<o:Attribute Ref="o44"/>
+<o:Attribute Ref="o48"/>
 </c:InfluentObject>
 </o:Operation>
-<o:Operation Id="o63">
+<o:Operation Id="o67">
 <a:ObjectID>71D64109-73A7-476A-A3AA-0318C5F8CCA0</a:ObjectID>
 <a:Name>setdateDeNaissance</a:Name>
 <a:Code>setdateDeNaissance</a:Code>
@@ -4197,7 +4239,7 @@ Author: Anassifi;</a:Comment>
 <a:Automatic>1</a:Automatic>
 <a:TemplateBody>%DefaultBody%</a:TemplateBody>
 <c:Parameters>
-<o:Parameter Id="o64">
+<o:Parameter Id="o68">
 <a:ObjectID>2018BE0F-894D-427F-928A-5C99F552CD3B</a:ObjectID>
 <a:Name>newDateDeNaissance</a:Name>
 <a:Code>newDateDeNaissance</a:Code>
@@ -4210,10 +4252,10 @@ Author: Anassifi;</a:Comment>
 </o:Parameter>
 </c:Parameters>
 <c:InfluentObject>
-<o:Attribute Ref="o44"/>
+<o:Attribute Ref="o48"/>
 </c:InfluentObject>
 </o:Operation>
-<o:Operation Id="o65">
+<o:Operation Id="o69">
 <a:ObjectID>22A3F644-D0CB-4233-8C7D-72696C5CF83E</a:ObjectID>
 <a:Name>Auth</a:Name>
 <a:Code>Auth</a:Code>
@@ -4226,7 +4268,7 @@ Author: Anassifi;</a:Comment>
 </o:Operation>
 </c:Operations>
 </o:Class>
-<o:Class Id="o32">
+<o:Class Id="o35">
 <a:ObjectID>3E2D5C6A-4B4E-494C-B1A4-A82B656E25E1</a:ObjectID>
 <a:Name>Formateur</a:Name>
 <a:Code>Formateur</a:Code>
@@ -4236,7 +4278,7 @@ Author: Anassifi;</a:Comment>
 <a:Modifier>Youcode</a:Modifier>
 <a:UseParentNamespace>0</a:UseParentNamespace>
 <c:Attributes>
-<o:Attribute Id="o66">
+<o:Attribute Id="o70">
 <a:ObjectID>D87891B9-8486-4071-B330-CE76CBB1D177</a:ObjectID>
 <a:Name>id_formateur</a:Name>
 <a:Code>id_formateur</a:Code>
@@ -4249,7 +4291,7 @@ Author: Anassifi;</a:Comment>
 </o:Attribute>
 </c:Attributes>
 <c:Operations>
-<o:Operation Id="o67">
+<o:Operation Id="o71">
 <a:ObjectID>30FEA557-0B94-4778-BF59-03BDFB3887DD</a:ObjectID>
 <a:Name>Formateur</a:Name>
 <a:Code>Formateur</a:Code>
@@ -4261,10 +4303,10 @@ Author: Anassifi;</a:Comment>
 <a:Automatic>1</a:Automatic>
 <a:TemplateBody>%DefaultBody%</a:TemplateBody>
 <c:InfluentObject>
-<o:Class Ref="o32"/>
+<o:Class Ref="o35"/>
 </c:InfluentObject>
 </o:Operation>
-<o:Operation Id="o68">
+<o:Operation Id="o72">
 <a:ObjectID>E92C8D81-CDCC-4248-962B-C2AF483D45B6</a:ObjectID>
 <a:Name>getid_formateur</a:Name>
 <a:Code>getid_formateur</a:Code>
@@ -4277,10 +4319,10 @@ Author: Anassifi;</a:Comment>
 <a:Automatic>1</a:Automatic>
 <a:TemplateBody>%DefaultBody%</a:TemplateBody>
 <c:InfluentObject>
-<o:Attribute Ref="o66"/>
+<o:Attribute Ref="o70"/>
 </c:InfluentObject>
 </o:Operation>
-<o:Operation Id="o69">
+<o:Operation Id="o73">
 <a:ObjectID>5A67D168-FF17-43B7-8AB7-7B8900B91B69</a:ObjectID>
 <a:Name>setid_formateur</a:Name>
 <a:Code>setid_formateur</a:Code>
@@ -4293,7 +4335,7 @@ Author: Anassifi;</a:Comment>
 <a:Automatic>1</a:Automatic>
 <a:TemplateBody>%DefaultBody%</a:TemplateBody>
 <c:Parameters>
-<o:Parameter Id="o70">
+<o:Parameter Id="o74">
 <a:ObjectID>61D6545E-AC2E-495C-8A2E-990373E1B66B</a:ObjectID>
 <a:Name>newId_formateur</a:Name>
 <a:Code>newId_formateur</a:Code>
@@ -4306,10 +4348,10 @@ Author: Anassifi;</a:Comment>
 </o:Parameter>
 </c:Parameters>
 <c:InfluentObject>
-<o:Attribute Ref="o66"/>
+<o:Attribute Ref="o70"/>
 </c:InfluentObject>
 </o:Operation>
-<o:Operation Id="o71">
+<o:Operation Id="o75">
 <a:ObjectID>A0B1DCE0-01BE-4FD1-9161-F45ABD972F1D</a:ObjectID>
 <a:Name>ajouteDabsence</a:Name>
 <a:Code>ajouteDabsence</a:Code>
@@ -4322,7 +4364,7 @@ Author: Anassifi;</a:Comment>
 </o:Operation>
 </c:Operations>
 </o:Class>
-<o:Class Id="o33">
+<o:Class Id="o36">
 <a:ObjectID>7CDA8D93-B6EC-4707-B5EA-B77FFE24CBB5</a:ObjectID>
 <a:Name>Secretaire</a:Name>
 <a:Code>Secretaire</a:Code>
@@ -4332,7 +4374,7 @@ Author: Anassifi;</a:Comment>
 <a:Modifier>Youcode</a:Modifier>
 <a:UseParentNamespace>0</a:UseParentNamespace>
 <c:Attributes>
-<o:Attribute Id="o72">
+<o:Attribute Id="o76">
 <a:ObjectID>4676356B-D023-4DCE-934F-DE671992F7A4</a:ObjectID>
 <a:Name>id_secretaire</a:Name>
 <a:Code>id_secretaire</a:Code>
@@ -4345,7 +4387,7 @@ Author: Anassifi;</a:Comment>
 </o:Attribute>
 </c:Attributes>
 <c:Operations>
-<o:Operation Id="o73">
+<o:Operation Id="o77">
 <a:ObjectID>98DB1EEF-F043-43B0-87FE-126069DEFB0F</a:ObjectID>
 <a:Name>Secretaire</a:Name>
 <a:Code>Secretaire</a:Code>
@@ -4357,10 +4399,10 @@ Author: Anassifi;</a:Comment>
 <a:Automatic>1</a:Automatic>
 <a:TemplateBody>%DefaultBody%</a:TemplateBody>
 <c:InfluentObject>
-<o:Class Ref="o33"/>
+<o:Class Ref="o36"/>
 </c:InfluentObject>
 </o:Operation>
-<o:Operation Id="o74">
+<o:Operation Id="o78">
 <a:ObjectID>CFFF8576-E36E-4151-A997-FB1F5BE16725</a:ObjectID>
 <a:Name>getid_secretaire</a:Name>
 <a:Code>getid_secretaire</a:Code>
@@ -4373,10 +4415,10 @@ Author: Anassifi;</a:Comment>
 <a:Automatic>1</a:Automatic>
 <a:TemplateBody>%DefaultBody%</a:TemplateBody>
 <c:InfluentObject>
-<o:Attribute Ref="o72"/>
+<o:Attribute Ref="o76"/>
 </c:InfluentObject>
 </o:Operation>
-<o:Operation Id="o75">
+<o:Operation Id="o79">
 <a:ObjectID>C9A6935B-D2B4-4A0D-8F6F-420BDA6CF6AF</a:ObjectID>
 <a:Name>setid_secretaire</a:Name>
 <a:Code>setid_secretaire</a:Code>
@@ -4389,7 +4431,7 @@ Author: Anassifi;</a:Comment>
 <a:Automatic>1</a:Automatic>
 <a:TemplateBody>%DefaultBody%</a:TemplateBody>
 <c:Parameters>
-<o:Parameter Id="o76">
+<o:Parameter Id="o80">
 <a:ObjectID>093F6054-A95F-40CE-AAC1-50E86591596E</a:ObjectID>
 <a:Name>newId_secretaire</a:Name>
 <a:Code>newId_secretaire</a:Code>
@@ -4402,10 +4444,10 @@ Author: Anassifi;</a:Comment>
 </o:Parameter>
 </c:Parameters>
 <c:InfluentObject>
-<o:Attribute Ref="o72"/>
+<o:Attribute Ref="o76"/>
 </c:InfluentObject>
 </o:Operation>
-<o:Operation Id="o77">
+<o:Operation Id="o81">
 <a:ObjectID>1D2CCF2E-B221-41BE-B3EB-710BE1408CB8</a:ObjectID>
 <a:Name>ajouteDeJustif</a:Name>
 <a:Code>ajouteDeJustif</a:Code>
@@ -4418,7 +4460,7 @@ Author: Anassifi;</a:Comment>
 </o:Operation>
 </c:Operations>
 </o:Class>
-<o:Class Id="o34">
+<o:Class Id="o37">
 <a:ObjectID>5ADC523E-3A0B-4EE3-9F98-689A50E3D83B</a:ObjectID>
 <a:Name>Apprenant</a:Name>
 <a:Code>Apprenant</a:Code>
@@ -4428,7 +4470,7 @@ Author: Anassifi;</a:Comment>
 <a:Modifier>Youcode</a:Modifier>
 <a:UseParentNamespace>0</a:UseParentNamespace>
 <c:Attributes>
-<o:Attribute Id="o78">
+<o:Attribute Id="o82">
 <a:ObjectID>85CE35E8-AD11-4C28-A81F-059320340495</a:ObjectID>
 <a:Name>cin</a:Name>
 <a:Code>cin</a:Code>
@@ -4441,7 +4483,7 @@ Author: Anassifi;</a:Comment>
 </o:Attribute>
 </c:Attributes>
 <c:Operations>
-<o:Operation Id="o79">
+<o:Operation Id="o83">
 <a:ObjectID>141F1906-176D-491C-837E-EA4B4AE3F8A3</a:ObjectID>
 <a:Name>Apprenant</a:Name>
 <a:Code>Apprenant</a:Code>
@@ -4453,10 +4495,10 @@ Author: Anassifi;</a:Comment>
 <a:Automatic>1</a:Automatic>
 <a:TemplateBody>%DefaultBody%</a:TemplateBody>
 <c:InfluentObject>
-<o:Class Ref="o34"/>
+<o:Class Ref="o37"/>
 </c:InfluentObject>
 </o:Operation>
-<o:Operation Id="o80">
+<o:Operation Id="o84">
 <a:ObjectID>F5876918-602F-40B3-AB15-B2742A25F42E</a:ObjectID>
 <a:Name>getcin</a:Name>
 <a:Code>getcin</a:Code>
@@ -4469,10 +4511,10 @@ Author: Anassifi;</a:Comment>
 <a:Automatic>1</a:Automatic>
 <a:TemplateBody>%DefaultBody%</a:TemplateBody>
 <c:InfluentObject>
-<o:Attribute Ref="o78"/>
+<o:Attribute Ref="o82"/>
 </c:InfluentObject>
 </o:Operation>
-<o:Operation Id="o81">
+<o:Operation Id="o85">
 <a:ObjectID>839065DF-5202-4A51-BE05-556FFCE3D88B</a:ObjectID>
 <a:Name>setcin</a:Name>
 <a:Code>setcin</a:Code>
@@ -4485,7 +4527,7 @@ Author: Anassifi;</a:Comment>
 <a:Automatic>1</a:Automatic>
 <a:TemplateBody>%DefaultBody%</a:TemplateBody>
 <c:Parameters>
-<o:Parameter Id="o82">
+<o:Parameter Id="o86">
 <a:ObjectID>A74DE954-A4B6-46CC-B725-EA79D3F8E6BF</a:ObjectID>
 <a:Name>newCin</a:Name>
 <a:Code>newCin</a:Code>
@@ -4498,10 +4540,10 @@ Author: Anassifi;</a:Comment>
 </o:Parameter>
 </c:Parameters>
 <c:InfluentObject>
-<o:Attribute Ref="o78"/>
+<o:Attribute Ref="o82"/>
 </c:InfluentObject>
 </o:Operation>
-<o:Operation Id="o83">
+<o:Operation Id="o87">
 <a:ObjectID>C958B677-B580-4C56-B786-30A0E129484F</a:ObjectID>
 <a:Name>afficherLesAbsence</a:Name>
 <a:Code>afficherLesAbsence</a:Code>
@@ -4514,7 +4556,7 @@ Author: Anassifi;</a:Comment>
 </o:Operation>
 </c:Operations>
 </o:Class>
-<o:Class Id="o35">
+<o:Class Id="o38">
 <a:ObjectID>2044A086-E370-4A43-8BA7-743B9816FB9D</a:ObjectID>
 <a:Name>Absence</a:Name>
 <a:Code>Absence</a:Code>
@@ -4524,7 +4566,7 @@ Author: Anassifi;</a:Comment>
 <a:Modifier>Youcode</a:Modifier>
 <a:UseParentNamespace>0</a:UseParentNamespace>
 <c:Attributes>
-<o:Attribute Id="o84">
+<o:Attribute Id="o88">
 <a:ObjectID>C91AC76C-7F40-4446-B236-307CEC34EA54</a:ObjectID>
 <a:Name>id_absence</a:Name>
 <a:Code>id_absence</a:Code>
@@ -4535,7 +4577,7 @@ Author: Anassifi;</a:Comment>
 <a:DataType>int</a:DataType>
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 </o:Attribute>
-<o:Attribute Id="o85">
+<o:Attribute Id="o89">
 <a:ObjectID>3CC5BB4B-87D5-4843-8351-9182690FE21B</a:ObjectID>
 <a:Name>absences</a:Name>
 <a:Code>absences</a:Code>
@@ -4546,7 +4588,7 @@ Author: Anassifi;</a:Comment>
 <a:DataType>String</a:DataType>
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 </o:Attribute>
-<o:Attribute Id="o86">
+<o:Attribute Id="o90">
 <a:ObjectID>E7E07182-8780-4426-98D4-B0D1CBDDF1F6</a:ObjectID>
 <a:Name>date</a:Name>
 <a:Code>date</a:Code>
@@ -4557,7 +4599,7 @@ Author: Anassifi;</a:Comment>
 <a:DataType>Date</a:DataType>
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 </o:Attribute>
-<o:Attribute Id="o87">
+<o:Attribute Id="o91">
 <a:ObjectID>C01BE1A6-D247-47DA-93A8-A3A16F7CB151</a:ObjectID>
 <a:Name>justification</a:Name>
 <a:Code>justification</a:Code>
@@ -4570,7 +4612,7 @@ Author: Anassifi;</a:Comment>
 </o:Attribute>
 </c:Attributes>
 <c:Operations>
-<o:Operation Id="o88">
+<o:Operation Id="o92">
 <a:ObjectID>A5EA0DCE-6E3D-4342-8903-0997B691105C</a:ObjectID>
 <a:Name>Absence</a:Name>
 <a:Code>Absence</a:Code>
@@ -4582,10 +4624,10 @@ Author: Anassifi;</a:Comment>
 <a:Automatic>1</a:Automatic>
 <a:TemplateBody>%DefaultBody%</a:TemplateBody>
 <c:InfluentObject>
-<o:Class Ref="o35"/>
+<o:Class Ref="o38"/>
 </c:InfluentObject>
 </o:Operation>
-<o:Operation Id="o89">
+<o:Operation Id="o93">
 <a:ObjectID>972D72FA-AE51-4EA1-9F37-D7D1F6065541</a:ObjectID>
 <a:Name>getid_absence</a:Name>
 <a:Code>getid_absence</a:Code>
@@ -4598,10 +4640,10 @@ Author: Anassifi;</a:Comment>
 <a:Automatic>1</a:Automatic>
 <a:TemplateBody>%DefaultBody%</a:TemplateBody>
 <c:InfluentObject>
-<o:Attribute Ref="o84"/>
+<o:Attribute Ref="o88"/>
 </c:InfluentObject>
 </o:Operation>
-<o:Operation Id="o90">
+<o:Operation Id="o94">
 <a:ObjectID>2A36D1BE-0C18-45ED-950B-8AAC7BFD4E43</a:ObjectID>
 <a:Name>setid_absence</a:Name>
 <a:Code>setid_absence</a:Code>
@@ -4614,7 +4656,7 @@ Author: Anassifi;</a:Comment>
 <a:Automatic>1</a:Automatic>
 <a:TemplateBody>%DefaultBody%</a:TemplateBody>
 <c:Parameters>
-<o:Parameter Id="o91">
+<o:Parameter Id="o95">
 <a:ObjectID>980DC8D2-FAF1-42A2-9ACD-89F657939882</a:ObjectID>
 <a:Name>newId_absence</a:Name>
 <a:Code>newId_absence</a:Code>
@@ -4627,10 +4669,10 @@ Author: Anassifi;</a:Comment>
 </o:Parameter>
 </c:Parameters>
 <c:InfluentObject>
-<o:Attribute Ref="o84"/>
+<o:Attribute Ref="o88"/>
 </c:InfluentObject>
 </o:Operation>
-<o:Operation Id="o92">
+<o:Operation Id="o96">
 <a:ObjectID>923CEA96-7FEA-482C-9EEC-B53051446E4A</a:ObjectID>
 <a:Name>getabsences</a:Name>
 <a:Code>getabsences</a:Code>
@@ -4643,10 +4685,10 @@ Author: Anassifi;</a:Comment>
 <a:Automatic>1</a:Automatic>
 <a:TemplateBody>%DefaultBody%</a:TemplateBody>
 <c:InfluentObject>
-<o:Attribute Ref="o85"/>
+<o:Attribute Ref="o89"/>
 </c:InfluentObject>
 </o:Operation>
-<o:Operation Id="o93">
+<o:Operation Id="o97">
 <a:ObjectID>1EC97755-C128-4DBA-A880-51883DECBE89</a:ObjectID>
 <a:Name>setabsences</a:Name>
 <a:Code>setabsences</a:Code>
@@ -4659,7 +4701,7 @@ Author: Anassifi;</a:Comment>
 <a:Automatic>1</a:Automatic>
 <a:TemplateBody>%DefaultBody%</a:TemplateBody>
 <c:Parameters>
-<o:Parameter Id="o94">
+<o:Parameter Id="o98">
 <a:ObjectID>BD2EEB39-DA98-4EE0-9252-F27A346BCA1C</a:ObjectID>
 <a:Name>newAbsences</a:Name>
 <a:Code>newAbsences</a:Code>
@@ -4672,10 +4714,10 @@ Author: Anassifi;</a:Comment>
 </o:Parameter>
 </c:Parameters>
 <c:InfluentObject>
-<o:Attribute Ref="o85"/>
+<o:Attribute Ref="o89"/>
 </c:InfluentObject>
 </o:Operation>
-<o:Operation Id="o95">
+<o:Operation Id="o99">
 <a:ObjectID>BDA30039-B28F-413F-BD36-FC5E8B215741</a:ObjectID>
 <a:Name>getdate</a:Name>
 <a:Code>getdate</a:Code>
@@ -4688,10 +4730,10 @@ Author: Anassifi;</a:Comment>
 <a:Automatic>1</a:Automatic>
 <a:TemplateBody>%DefaultBody%</a:TemplateBody>
 <c:InfluentObject>
-<o:Attribute Ref="o86"/>
+<o:Attribute Ref="o90"/>
 </c:InfluentObject>
 </o:Operation>
-<o:Operation Id="o96">
+<o:Operation Id="o100">
 <a:ObjectID>2802CF14-5042-4174-B369-3699F9152E14</a:ObjectID>
 <a:Name>setdate</a:Name>
 <a:Code>setdate</a:Code>
@@ -4704,7 +4746,7 @@ Author: Anassifi;</a:Comment>
 <a:Automatic>1</a:Automatic>
 <a:TemplateBody>%DefaultBody%</a:TemplateBody>
 <c:Parameters>
-<o:Parameter Id="o97">
+<o:Parameter Id="o101">
 <a:ObjectID>F47D871B-E0EF-480D-9CC3-8FA81925E221</a:ObjectID>
 <a:Name>newDate</a:Name>
 <a:Code>newDate</a:Code>
@@ -4717,10 +4759,10 @@ Author: Anassifi;</a:Comment>
 </o:Parameter>
 </c:Parameters>
 <c:InfluentObject>
-<o:Attribute Ref="o86"/>
+<o:Attribute Ref="o90"/>
 </c:InfluentObject>
 </o:Operation>
-<o:Operation Id="o98">
+<o:Operation Id="o102">
 <a:ObjectID>2E79C828-6C96-4460-9FD2-1DF1647D5DCC</a:ObjectID>
 <a:Name>getjustification</a:Name>
 <a:Code>getjustification</a:Code>
@@ -4733,10 +4775,10 @@ Author: Anassifi;</a:Comment>
 <a:Automatic>1</a:Automatic>
 <a:TemplateBody>%DefaultBody%</a:TemplateBody>
 <c:InfluentObject>
-<o:Attribute Ref="o87"/>
+<o:Attribute Ref="o91"/>
 </c:InfluentObject>
 </o:Operation>
-<o:Operation Id="o99">
+<o:Operation Id="o103">
 <a:ObjectID>4FEB143E-3A13-4643-BA3D-DE39BA68F177</a:ObjectID>
 <a:Name>setjustification</a:Name>
 <a:Code>setjustification</a:Code>
@@ -4749,7 +4791,7 @@ Author: Anassifi;</a:Comment>
 <a:Automatic>1</a:Automatic>
 <a:TemplateBody>%DefaultBody%</a:TemplateBody>
 <c:Parameters>
-<o:Parameter Id="o100">
+<o:Parameter Id="o104">
 <a:ObjectID>4B5C3F92-1DB0-4186-A861-3E7F921FAFF8</a:ObjectID>
 <a:Name>newJustification</a:Name>
 <a:Code>newJustification</a:Code>
@@ -4762,12 +4804,12 @@ Author: Anassifi;</a:Comment>
 </o:Parameter>
 </c:Parameters>
 <c:InfluentObject>
-<o:Attribute Ref="o87"/>
+<o:Attribute Ref="o91"/>
 </c:InfluentObject>
 </o:Operation>
 </c:Operations>
 </o:Class>
-<o:Class Id="o36">
+<o:Class Id="o39">
 <a:ObjectID>A6895C0C-1A22-4ADF-9859-2CA1FB921E3A</a:ObjectID>
 <a:Name>Salle</a:Name>
 <a:Code>Salle</a:Code>
@@ -4777,7 +4819,7 @@ Author: Anassifi;</a:Comment>
 <a:Modifier>Youcode</a:Modifier>
 <a:UseParentNamespace>0</a:UseParentNamespace>
 <c:Attributes>
-<o:Attribute Id="o101">
+<o:Attribute Id="o105">
 <a:ObjectID>6B732497-4608-4D9C-9501-32758A3A4C51</a:ObjectID>
 <a:Name>id_salle</a:Name>
 <a:Code>id_salle</a:Code>
@@ -4788,7 +4830,7 @@ Author: Anassifi;</a:Comment>
 <a:DataType>int</a:DataType>
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 </o:Attribute>
-<o:Attribute Id="o102">
+<o:Attribute Id="o106">
 <a:ObjectID>BC6870C0-DF8A-4D87-BBC0-DFF93440D77A</a:ObjectID>
 <a:Name>nomDeSalle</a:Name>
 <a:Code>nomDeSalle</a:Code>
@@ -4801,7 +4843,7 @@ Author: Anassifi;</a:Comment>
 </o:Attribute>
 </c:Attributes>
 <c:Operations>
-<o:Operation Id="o103">
+<o:Operation Id="o107">
 <a:ObjectID>9900A7AF-3844-4B05-A1E2-ECA00901D711</a:ObjectID>
 <a:Name>Salle</a:Name>
 <a:Code>Salle</a:Code>
@@ -4813,10 +4855,10 @@ Author: Anassifi;</a:Comment>
 <a:Automatic>1</a:Automatic>
 <a:TemplateBody>%DefaultBody%</a:TemplateBody>
 <c:InfluentObject>
-<o:Class Ref="o36"/>
+<o:Class Ref="o39"/>
 </c:InfluentObject>
 </o:Operation>
-<o:Operation Id="o104">
+<o:Operation Id="o108">
 <a:ObjectID>07652F00-4DE6-4839-9988-EA7202C10708</a:ObjectID>
 <a:Name>getid_salle</a:Name>
 <a:Code>getid_salle</a:Code>
@@ -4829,10 +4871,10 @@ Author: Anassifi;</a:Comment>
 <a:Automatic>1</a:Automatic>
 <a:TemplateBody>%DefaultBody%</a:TemplateBody>
 <c:InfluentObject>
-<o:Attribute Ref="o101"/>
+<o:Attribute Ref="o105"/>
 </c:InfluentObject>
 </o:Operation>
-<o:Operation Id="o105">
+<o:Operation Id="o109">
 <a:ObjectID>2B284E51-0FCA-4F66-AF9D-33693538BBC8</a:ObjectID>
 <a:Name>setid_salle</a:Name>
 <a:Code>setid_salle</a:Code>
@@ -4845,7 +4887,7 @@ Author: Anassifi;</a:Comment>
 <a:Automatic>1</a:Automatic>
 <a:TemplateBody>%DefaultBody%</a:TemplateBody>
 <c:Parameters>
-<o:Parameter Id="o106">
+<o:Parameter Id="o110">
 <a:ObjectID>27B84B82-FA09-4DF8-AA1F-B086B7874371</a:ObjectID>
 <a:Name>newId_salle</a:Name>
 <a:Code>newId_salle</a:Code>
@@ -4858,10 +4900,10 @@ Author: Anassifi;</a:Comment>
 </o:Parameter>
 </c:Parameters>
 <c:InfluentObject>
-<o:Attribute Ref="o101"/>
+<o:Attribute Ref="o105"/>
 </c:InfluentObject>
 </o:Operation>
-<o:Operation Id="o107">
+<o:Operation Id="o111">
 <a:ObjectID>5CEB5E9E-78D6-4314-8690-F3C0F16EEFA5</a:ObjectID>
 <a:Name>getnomDeSalle</a:Name>
 <a:Code>getnomDeSalle</a:Code>
@@ -4874,10 +4916,10 @@ Author: Anassifi;</a:Comment>
 <a:Automatic>1</a:Automatic>
 <a:TemplateBody>%DefaultBody%</a:TemplateBody>
 <c:InfluentObject>
-<o:Attribute Ref="o102"/>
+<o:Attribute Ref="o106"/>
 </c:InfluentObject>
 </o:Operation>
-<o:Operation Id="o108">
+<o:Operation Id="o112">
 <a:ObjectID>B18E4531-149B-434D-8D6B-8D0ED29ED103</a:ObjectID>
 <a:Name>setnomDeSalle</a:Name>
 <a:Code>setnomDeSalle</a:Code>
@@ -4890,7 +4932,7 @@ Author: Anassifi;</a:Comment>
 <a:Automatic>1</a:Automatic>
 <a:TemplateBody>%DefaultBody%</a:TemplateBody>
 <c:Parameters>
-<o:Parameter Id="o109">
+<o:Parameter Id="o113">
 <a:ObjectID>DB9CB5BF-4295-4C51-93A5-1D0395B92DF3</a:ObjectID>
 <a:Name>newNomDeSalle</a:Name>
 <a:Code>newNomDeSalle</a:Code>
@@ -4903,12 +4945,12 @@ Author: Anassifi;</a:Comment>
 </o:Parameter>
 </c:Parameters>
 <c:InfluentObject>
-<o:Attribute Ref="o102"/>
+<o:Attribute Ref="o106"/>
 </c:InfluentObject>
 </o:Operation>
 </c:Operations>
 </o:Class>
-<o:Class Id="o37">
+<o:Class Id="o40">
 <a:ObjectID>2C6A9F7B-8F6B-4A09-8AEC-11272DFAB0FE</a:ObjectID>
 <a:Name>Promo</a:Name>
 <a:Code>Promo</a:Code>
@@ -4918,7 +4960,7 @@ Author: Anassifi;</a:Comment>
 <a:Modifier>Youcode</a:Modifier>
 <a:UseParentNamespace>0</a:UseParentNamespace>
 <c:Attributes>
-<o:Attribute Id="o110">
+<o:Attribute Id="o114">
 <a:ObjectID>A3476C4E-CC68-4DDC-8B06-1DCB1DE5A4BF</a:ObjectID>
 <a:Name>id_promo</a:Name>
 <a:Code>id_promo</a:Code>
@@ -4929,7 +4971,7 @@ Author: Anassifi;</a:Comment>
 <a:DataType>int</a:DataType>
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 </o:Attribute>
-<o:Attribute Id="o111">
+<o:Attribute Id="o115">
 <a:ObjectID>0BC65501-3977-4FD1-8DD8-CB259748CC14</a:ObjectID>
 <a:Name>anneeDePromo</a:Name>
 <a:Code>anneeDePromo</a:Code>
@@ -4940,7 +4982,7 @@ Author: Anassifi;</a:Comment>
 <a:DataType>Date</a:DataType>
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 </o:Attribute>
-<o:Attribute Id="o112">
+<o:Attribute Id="o116">
 <a:ObjectID>F6C2A6A0-A959-47D6-8074-290399DC63CC</a:ObjectID>
 <a:Name>numbreDesEtudiant</a:Name>
 <a:Code>numbreDesEtudiant</a:Code>
@@ -4953,7 +4995,7 @@ Author: Anassifi;</a:Comment>
 </o:Attribute>
 </c:Attributes>
 <c:Operations>
-<o:Operation Id="o113">
+<o:Operation Id="o117">
 <a:ObjectID>2EA5C6D1-ED24-4CC1-9A7E-9CD514092C99</a:ObjectID>
 <a:Name>Promo</a:Name>
 <a:Code>Promo</a:Code>
@@ -4965,10 +5007,10 @@ Author: Anassifi;</a:Comment>
 <a:Automatic>1</a:Automatic>
 <a:TemplateBody>%DefaultBody%</a:TemplateBody>
 <c:InfluentObject>
-<o:Class Ref="o37"/>
+<o:Class Ref="o40"/>
 </c:InfluentObject>
 </o:Operation>
-<o:Operation Id="o114">
+<o:Operation Id="o118">
 <a:ObjectID>85CC725F-7F4E-4753-81CE-9D07B60424A9</a:ObjectID>
 <a:Name>getid_promo</a:Name>
 <a:Code>getid_promo</a:Code>
@@ -4981,10 +5023,10 @@ Author: Anassifi;</a:Comment>
 <a:Automatic>1</a:Automatic>
 <a:TemplateBody>%DefaultBody%</a:TemplateBody>
 <c:InfluentObject>
-<o:Attribute Ref="o110"/>
+<o:Attribute Ref="o114"/>
 </c:InfluentObject>
 </o:Operation>
-<o:Operation Id="o115">
+<o:Operation Id="o119">
 <a:ObjectID>53F4384C-7BD4-420C-A3A6-9A04D4630667</a:ObjectID>
 <a:Name>setid_promo</a:Name>
 <a:Code>setid_promo</a:Code>
@@ -4997,7 +5039,7 @@ Author: Anassifi;</a:Comment>
 <a:Automatic>1</a:Automatic>
 <a:TemplateBody>%DefaultBody%</a:TemplateBody>
 <c:Parameters>
-<o:Parameter Id="o116">
+<o:Parameter Id="o120">
 <a:ObjectID>8C4BA229-36AF-4E0A-9DD1-E28818A66FA1</a:ObjectID>
 <a:Name>newId_promo</a:Name>
 <a:Code>newId_promo</a:Code>
@@ -5010,10 +5052,10 @@ Author: Anassifi;</a:Comment>
 </o:Parameter>
 </c:Parameters>
 <c:InfluentObject>
-<o:Attribute Ref="o110"/>
+<o:Attribute Ref="o114"/>
 </c:InfluentObject>
 </o:Operation>
-<o:Operation Id="o117">
+<o:Operation Id="o121">
 <a:ObjectID>619213AF-EEC9-4D49-8BE7-C2CCC17167FF</a:ObjectID>
 <a:Name>getanneeDePromo</a:Name>
 <a:Code>getanneeDePromo</a:Code>
@@ -5026,10 +5068,10 @@ Author: Anassifi;</a:Comment>
 <a:Automatic>1</a:Automatic>
 <a:TemplateBody>%DefaultBody%</a:TemplateBody>
 <c:InfluentObject>
-<o:Attribute Ref="o111"/>
+<o:Attribute Ref="o115"/>
 </c:InfluentObject>
 </o:Operation>
-<o:Operation Id="o118">
+<o:Operation Id="o122">
 <a:ObjectID>DF901F46-FBF7-429A-B17E-87D4448FE4A7</a:ObjectID>
 <a:Name>setanneeDePromo</a:Name>
 <a:Code>setanneeDePromo</a:Code>
@@ -5042,7 +5084,7 @@ Author: Anassifi;</a:Comment>
 <a:Automatic>1</a:Automatic>
 <a:TemplateBody>%DefaultBody%</a:TemplateBody>
 <c:Parameters>
-<o:Parameter Id="o119">
+<o:Parameter Id="o123">
 <a:ObjectID>426EEA65-6879-4B31-983D-D0671E9480D9</a:ObjectID>
 <a:Name>newAnneeDePromo</a:Name>
 <a:Code>newAnneeDePromo</a:Code>
@@ -5055,10 +5097,10 @@ Author: Anassifi;</a:Comment>
 </o:Parameter>
 </c:Parameters>
 <c:InfluentObject>
-<o:Attribute Ref="o111"/>
+<o:Attribute Ref="o115"/>
 </c:InfluentObject>
 </o:Operation>
-<o:Operation Id="o120">
+<o:Operation Id="o124">
 <a:ObjectID>83DC3D22-34BB-40A5-B9B3-D202B7D1E2AC</a:ObjectID>
 <a:Name>getnumbreDesEtudiant</a:Name>
 <a:Code>getnumbreDesEtudiant</a:Code>
@@ -5071,10 +5113,10 @@ Author: Anassifi;</a:Comment>
 <a:Automatic>1</a:Automatic>
 <a:TemplateBody>%DefaultBody%</a:TemplateBody>
 <c:InfluentObject>
-<o:Attribute Ref="o112"/>
+<o:Attribute Ref="o116"/>
 </c:InfluentObject>
 </o:Operation>
-<o:Operation Id="o121">
+<o:Operation Id="o125">
 <a:ObjectID>1F1F5B0B-1CC2-4352-94B8-D3902873B212</a:ObjectID>
 <a:Name>setnumbreDesEtudiant</a:Name>
 <a:Code>setnumbreDesEtudiant</a:Code>
@@ -5087,7 +5129,7 @@ Author: Anassifi;</a:Comment>
 <a:Automatic>1</a:Automatic>
 <a:TemplateBody>%DefaultBody%</a:TemplateBody>
 <c:Parameters>
-<o:Parameter Id="o122">
+<o:Parameter Id="o126">
 <a:ObjectID>94BDE8B2-F572-4D40-A048-A30756FCF696</a:ObjectID>
 <a:Name>newNumbreDesEtudiant</a:Name>
 <a:Code>newNumbreDesEtudiant</a:Code>
@@ -5100,12 +5142,12 @@ Author: Anassifi;</a:Comment>
 </o:Parameter>
 </c:Parameters>
 <c:InfluentObject>
-<o:Attribute Ref="o112"/>
+<o:Attribute Ref="o116"/>
 </c:InfluentObject>
 </o:Operation>
 </c:Operations>
 </o:Class>
-<o:Class Id="o38">
+<o:Class Id="o41">
 <a:ObjectID>317DFB14-E525-4B69-BAA2-77E3CB5F1906</a:ObjectID>
 <a:Name>Specialite</a:Name>
 <a:Code>Specialite</a:Code>
@@ -5115,7 +5157,7 @@ Author: Anassifi;</a:Comment>
 <a:Modifier>yc</a:Modifier>
 <a:UseParentNamespace>0</a:UseParentNamespace>
 <c:Attributes>
-<o:Attribute Id="o123">
+<o:Attribute Id="o127">
 <a:ObjectID>E9DD12AD-75EA-4366-8275-6C67428B4FEB</a:ObjectID>
 <a:Name>id_specialite</a:Name>
 <a:Code>id_specialite</a:Code>
@@ -5126,7 +5168,7 @@ Author: Anassifi;</a:Comment>
 <a:DataType>int</a:DataType>
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 </o:Attribute>
-<o:Attribute Id="o124">
+<o:Attribute Id="o128">
 <a:ObjectID>F33F96DD-E595-47E8-A739-7AC064C95C69</a:ObjectID>
 <a:Name>nom</a:Name>
 <a:Code>nom</a:Code>
@@ -5137,7 +5179,7 @@ Author: Anassifi;</a:Comment>
 <a:DataType>String</a:DataType>
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 </o:Attribute>
-<o:Attribute Id="o125">
+<o:Attribute Id="o129">
 <a:ObjectID>A5D6A208-1D89-44FF-9904-6C7FB0EBBF17</a:ObjectID>
 <a:Name>numbreDeModule</a:Name>
 <a:Code>numbreDeModule</a:Code>
@@ -5150,7 +5192,7 @@ Author: Anassifi;</a:Comment>
 </o:Attribute>
 </c:Attributes>
 <c:Operations>
-<o:Operation Id="o126">
+<o:Operation Id="o130">
 <a:ObjectID>DBDC82FB-8F5E-49E7-A116-8D0E3FD7E335</a:ObjectID>
 <a:Name>Specialite</a:Name>
 <a:Code>Specialite</a:Code>
@@ -5162,10 +5204,10 @@ Author: Anassifi;</a:Comment>
 <a:Automatic>1</a:Automatic>
 <a:TemplateBody>%DefaultBody%</a:TemplateBody>
 <c:InfluentObject>
-<o:Class Ref="o38"/>
+<o:Class Ref="o41"/>
 </c:InfluentObject>
 </o:Operation>
-<o:Operation Id="o127">
+<o:Operation Id="o131">
 <a:ObjectID>69C076A6-68E8-4D71-8D3D-F02F4B4C6199</a:ObjectID>
 <a:Name>getid_specialite</a:Name>
 <a:Code>getid_specialite</a:Code>
@@ -5178,10 +5220,10 @@ Author: Anassifi;</a:Comment>
 <a:Automatic>1</a:Automatic>
 <a:TemplateBody>%DefaultBody%</a:TemplateBody>
 <c:InfluentObject>
-<o:Attribute Ref="o123"/>
+<o:Attribute Ref="o127"/>
 </c:InfluentObject>
 </o:Operation>
-<o:Operation Id="o128">
+<o:Operation Id="o132">
 <a:ObjectID>DF10E439-12E3-40FB-9CD7-3CDDF0A33551</a:ObjectID>
 <a:Name>setid_specialite</a:Name>
 <a:Code>setid_specialite</a:Code>
@@ -5194,7 +5236,7 @@ Author: Anassifi;</a:Comment>
 <a:Automatic>1</a:Automatic>
 <a:TemplateBody>%DefaultBody%</a:TemplateBody>
 <c:Parameters>
-<o:Parameter Id="o129">
+<o:Parameter Id="o133">
 <a:ObjectID>948AABF8-5F8A-4BAE-BFA6-914DB6143714</a:ObjectID>
 <a:Name>newId_specialite</a:Name>
 <a:Code>newId_specialite</a:Code>
@@ -5207,10 +5249,10 @@ Author: Anassifi;</a:Comment>
 </o:Parameter>
 </c:Parameters>
 <c:InfluentObject>
-<o:Attribute Ref="o123"/>
+<o:Attribute Ref="o127"/>
 </c:InfluentObject>
 </o:Operation>
-<o:Operation Id="o130">
+<o:Operation Id="o134">
 <a:ObjectID>AC28FBC6-1DD7-436B-81A9-A653EE8422E9</a:ObjectID>
 <a:Name>getnom</a:Name>
 <a:Code>getnom</a:Code>
@@ -5223,10 +5265,10 @@ Author: Anassifi;</a:Comment>
 <a:Automatic>1</a:Automatic>
 <a:TemplateBody>%DefaultBody%</a:TemplateBody>
 <c:InfluentObject>
-<o:Attribute Ref="o124"/>
+<o:Attribute Ref="o128"/>
 </c:InfluentObject>
 </o:Operation>
-<o:Operation Id="o131">
+<o:Operation Id="o135">
 <a:ObjectID>BA49315C-72CA-4647-AD9C-5BF0BDF45CE3</a:ObjectID>
 <a:Name>setnom</a:Name>
 <a:Code>setnom</a:Code>
@@ -5239,7 +5281,7 @@ Author: Anassifi;</a:Comment>
 <a:Automatic>1</a:Automatic>
 <a:TemplateBody>%DefaultBody%</a:TemplateBody>
 <c:Parameters>
-<o:Parameter Id="o132">
+<o:Parameter Id="o136">
 <a:ObjectID>B0ECECA1-5B66-4363-A42E-1318FDDAC027</a:ObjectID>
 <a:Name>newNom</a:Name>
 <a:Code>newNom</a:Code>
@@ -5252,10 +5294,10 @@ Author: Anassifi;</a:Comment>
 </o:Parameter>
 </c:Parameters>
 <c:InfluentObject>
-<o:Attribute Ref="o124"/>
+<o:Attribute Ref="o128"/>
 </c:InfluentObject>
 </o:Operation>
-<o:Operation Id="o133">
+<o:Operation Id="o137">
 <a:ObjectID>E8A8F893-8FD4-4048-992E-F9C45C1CDBB5</a:ObjectID>
 <a:Name>getnumbreDeModule</a:Name>
 <a:Code>getnumbreDeModule</a:Code>
@@ -5268,10 +5310,10 @@ Author: Anassifi;</a:Comment>
 <a:Automatic>1</a:Automatic>
 <a:TemplateBody>%DefaultBody%</a:TemplateBody>
 <c:InfluentObject>
-<o:Attribute Ref="o125"/>
+<o:Attribute Ref="o129"/>
 </c:InfluentObject>
 </o:Operation>
-<o:Operation Id="o134">
+<o:Operation Id="o138">
 <a:ObjectID>4FBA2970-3B89-4F38-92CA-45C5AB601422</a:ObjectID>
 <a:Name>setnumbreDeModule</a:Name>
 <a:Code>setnumbreDeModule</a:Code>
@@ -5284,7 +5326,7 @@ Author: Anassifi;</a:Comment>
 <a:Automatic>1</a:Automatic>
 <a:TemplateBody>%DefaultBody%</a:TemplateBody>
 <c:Parameters>
-<o:Parameter Id="o135">
+<o:Parameter Id="o139">
 <a:ObjectID>FCDF7B43-0A11-402A-B37E-0BFDB4D07543</a:ObjectID>
 <a:Name>newNumbreDeModule</a:Name>
 <a:Code>newNumbreDeModule</a:Code>
@@ -5297,10 +5339,33 @@ Author: Anassifi;</a:Comment>
 </o:Parameter>
 </c:Parameters>
 <c:InfluentObject>
-<o:Attribute Ref="o125"/>
+<o:Attribute Ref="o129"/>
 </c:InfluentObject>
 </o:Operation>
 </c:Operations>
+</o:Class>
+<o:Class Id="o42">
+<a:ObjectID>B5E14F59-CE82-4E4B-BA6A-031FAAF9B621</a:ObjectID>
+<a:Name>Admin</a:Name>
+<a:Code>Admin</a:Code>
+<a:CreationDate>1610747836</a:CreationDate>
+<a:Creator>yc</a:Creator>
+<a:ModificationDate>1610747858</a:ModificationDate>
+<a:Modifier>yc</a:Modifier>
+<a:UseParentNamespace>0</a:UseParentNamespace>
+<c:Attributes>
+<o:Attribute Id="o140">
+<a:ObjectID>A0EC92B7-8E66-4704-8AC9-1316EA79CA8D</a:ObjectID>
+<a:Name>id_admin</a:Name>
+<a:Code>id_admin</a:Code>
+<a:CreationDate>1610747839</a:CreationDate>
+<a:Creator>yc</a:Creator>
+<a:ModificationDate>1610747858</a:ModificationDate>
+<a:Modifier>yc</a:Modifier>
+<a:DataType>int</a:DataType>
+<a:Attribute.Visibility>-</a:Attribute.Visibility>
+</o:Attribute>
+</c:Attributes>
 </o:Class>
 </c:Classes>
 <c:Associations>
@@ -5315,10 +5380,10 @@ Author: Anassifi;</a:Comment>
 <a:RoleAMultiplicity>0..*</a:RoleAMultiplicity>
 <a:RoleBMultiplicity>1</a:RoleBMultiplicity>
 <c:Object1>
-<o:Class Ref="o34"/>
+<o:Class Ref="o37"/>
 </c:Object1>
 <c:Object2>
-<o:Class Ref="o35"/>
+<o:Class Ref="o38"/>
 </c:Object2>
 </o:Association>
 <o:Association Id="o14">
@@ -5332,10 +5397,10 @@ Author: Anassifi;</a:Comment>
 <a:RoleAMultiplicity>1</a:RoleAMultiplicity>
 <a:RoleBMultiplicity>1</a:RoleBMultiplicity>
 <c:Object1>
-<o:Class Ref="o32"/>
+<o:Class Ref="o35"/>
 </c:Object1>
 <c:Object2>
-<o:Class Ref="o36"/>
+<o:Class Ref="o39"/>
 </c:Object2>
 </o:Association>
 <o:Association Id="o17">
@@ -5344,15 +5409,15 @@ Author: Anassifi;</a:Comment>
 <a:Code>Association_3</a:Code>
 <a:CreationDate>1610642823</a:CreationDate>
 <a:Creator>Youcode</a:Creator>
-<a:ModificationDate>1610642842</a:ModificationDate>
-<a:Modifier>Youcode</a:Modifier>
-<a:RoleAMultiplicity>1</a:RoleAMultiplicity>
-<a:RoleBMultiplicity>1..*</a:RoleBMultiplicity>
+<a:ModificationDate>1610758236</a:ModificationDate>
+<a:Modifier>yc</a:Modifier>
+<a:RoleAMultiplicity>1..*</a:RoleAMultiplicity>
+<a:RoleBMultiplicity>1..1</a:RoleBMultiplicity>
 <c:Object1>
-<o:Class Ref="o37"/>
+<o:Class Ref="o40"/>
 </c:Object1>
 <c:Object2>
-<o:Class Ref="o34"/>
+<o:Class Ref="o37"/>
 </c:Object2>
 </o:Association>
 <o:Association Id="o20">
@@ -5361,18 +5426,18 @@ Author: Anassifi;</a:Comment>
 <a:Code>Association_4</a:Code>
 <a:CreationDate>1610643153</a:CreationDate>
 <a:Creator>Youcode</a:Creator>
-<a:ModificationDate>1610701045</a:ModificationDate>
-<a:Modifier>Youcode</a:Modifier>
-<a:RoleAMultiplicity>1..*</a:RoleAMultiplicity>
-<a:RoleBMultiplicity>1</a:RoleBMultiplicity>
+<a:ModificationDate>1610758151</a:ModificationDate>
+<a:Modifier>yc</a:Modifier>
+<a:RoleAMultiplicity>1..1</a:RoleAMultiplicity>
+<a:RoleBMultiplicity>1..*</a:RoleBMultiplicity>
 <c:Object1>
-<o:Class Ref="o34"/>
+<o:Class Ref="o37"/>
 </c:Object1>
 <c:Object2>
-<o:Class Ref="o38"/>
+<o:Class Ref="o41"/>
 </c:Object2>
 </o:Association>
-<o:Association Id="o30">
+<o:Association Id="o22">
 <a:ObjectID>9DE34AD8-27E1-4724-9268-DFAFB2C27A19</a:ObjectID>
 <a:Name>Association_5</a:Name>
 <a:Code>Association_5</a:Code>
@@ -5383,65 +5448,77 @@ Author: Anassifi;</a:Comment>
 <a:RoleAMultiplicity>1..1</a:RoleAMultiplicity>
 <a:RoleBMultiplicity>1..1</a:RoleBMultiplicity>
 <c:Object1>
-<o:Class Ref="o38"/>
+<o:Class Ref="o41"/>
 </c:Object1>
 <c:Object2>
-<o:Class Ref="o32"/>
+<o:Class Ref="o35"/>
 </c:Object2>
 </o:Association>
 </c:Associations>
-<c:Dependencies>
-<o:Dependency Id="o23">
-<a:ObjectID>73FE3DBF-8A50-4F65-8DD1-D1DE7CE31FC2</a:ObjectID>
-<a:Name>Dependency_1</a:Name>
-<a:Code>Dependency_1</a:Code>
-<a:CreationDate>1610699951</a:CreationDate>
-<a:Creator>Youcode</a:Creator>
-<a:ModificationDate>1610699974</a:ModificationDate>
-<a:Modifier>Youcode</a:Modifier>
-<a:Stereotype>extend</a:Stereotype>
+<c:Generalizations>
+<o:Generalization Id="o26">
+<a:ObjectID>1C5E6285-B61A-4F04-9334-94831C620016</a:ObjectID>
+<a:Name>Generalisation_1</a:Name>
+<a:Code>Generalisation_1</a:Code>
+<a:CreationDate>1610747911</a:CreationDate>
+<a:Creator>yc</a:Creator>
+<a:ModificationDate>1610747911</a:ModificationDate>
+<a:Modifier>yc</a:Modifier>
 <c:Object1>
-<o:Class Ref="o31"/>
-</c:Object1>
-<c:Object2>
-<o:Class Ref="o32"/>
-</c:Object2>
-</o:Dependency>
-<o:Dependency Id="o25">
-<a:ObjectID>11A2D15B-6FFB-47F7-993A-E31F9A556D47</a:ObjectID>
-<a:Name>Dependency_2</a:Name>
-<a:Code>Dependency_2</a:Code>
-<a:CreationDate>1610699952</a:CreationDate>
-<a:Creator>Youcode</a:Creator>
-<a:ModificationDate>1610699979</a:ModificationDate>
-<a:Modifier>Youcode</a:Modifier>
-<a:Stereotype>extend</a:Stereotype>
-<c:Object1>
-<o:Class Ref="o31"/>
-</c:Object1>
-<c:Object2>
 <o:Class Ref="o34"/>
-</c:Object2>
-</o:Dependency>
-<o:Dependency Id="o28">
-<a:ObjectID>6881040F-2775-4C9F-ABC8-101071F5F89D</a:ObjectID>
-<a:Name>Dependency_3</a:Name>
-<a:Code>Dependency_3</a:Code>
-<a:CreationDate>1610699954</a:CreationDate>
-<a:Creator>Youcode</a:Creator>
-<a:ModificationDate>1610699965</a:ModificationDate>
-<a:Modifier>Youcode</a:Modifier>
-<a:Stereotype>extend</a:Stereotype>
-<c:Object1>
-<o:Class Ref="o31"/>
 </c:Object1>
 <c:Object2>
-<o:Class Ref="o33"/>
+<o:Class Ref="o42"/>
 </c:Object2>
-</o:Dependency>
-</c:Dependencies>
+</o:Generalization>
+<o:Generalization Id="o28">
+<a:ObjectID>55880A0E-CE3F-41DA-BE79-547739D422A0</a:ObjectID>
+<a:Name>Generalisation_2</a:Name>
+<a:Code>Generalisation_2</a:Code>
+<a:CreationDate>1610747970</a:CreationDate>
+<a:Creator>yc</a:Creator>
+<a:ModificationDate>1610747970</a:ModificationDate>
+<a:Modifier>yc</a:Modifier>
+<c:Object1>
+<o:Class Ref="o34"/>
+</c:Object1>
+<c:Object2>
+<o:Class Ref="o35"/>
+</c:Object2>
+</o:Generalization>
+<o:Generalization Id="o31">
+<a:ObjectID>F3602DC2-636E-4F2D-9CE4-2DEB524A6D7E</a:ObjectID>
+<a:Name>Generalisation_3</a:Name>
+<a:Code>Generalisation_3</a:Code>
+<a:CreationDate>1610747973</a:CreationDate>
+<a:Creator>yc</a:Creator>
+<a:ModificationDate>1610747973</a:ModificationDate>
+<a:Modifier>yc</a:Modifier>
+<c:Object1>
+<o:Class Ref="o34"/>
+</c:Object1>
+<c:Object2>
+<o:Class Ref="o36"/>
+</c:Object2>
+</o:Generalization>
+<o:Generalization Id="o33">
+<a:ObjectID>616C4360-083C-48C0-9B07-D58D00B0C84D</a:ObjectID>
+<a:Name>Generalisation_4</a:Name>
+<a:Code>Generalisation_4</a:Code>
+<a:CreationDate>1610747977</a:CreationDate>
+<a:Creator>yc</a:Creator>
+<a:ModificationDate>1610747977</a:ModificationDate>
+<a:Modifier>yc</a:Modifier>
+<c:Object1>
+<o:Class Ref="o34"/>
+</c:Object1>
+<c:Object2>
+<o:Class Ref="o37"/>
+</c:Object2>
+</o:Generalization>
+</c:Generalizations>
 <c:TargetModels>
-<o:TargetModel Id="o136">
+<o:TargetModel Id="o141">
 <a:ObjectID>45BC0BE9-5630-4838-B4B3-CB6B29F4930C</a:ObjectID>
 <a:Name>Analyse</a:Name>
 <a:Code>Analysis</a:Code>
@@ -5456,7 +5533,7 @@ Author: Anassifi;</a:Comment>
 <o:Shortcut Ref="o5"/>
 </c:SessionShortcuts>
 </o:TargetModel>
-<o:TargetModel Id="o137">
+<o:TargetModel Id="o142">
 <a:ObjectID>23025A58-3BFD-4770-B6D0-87C3B0D821D8</a:ObjectID>
 <a:Name>Class Diagram_1</a:Name>
 <a:Code>CLASS_DIAGRAM_1</a:Code>
@@ -5471,7 +5548,7 @@ Author: Anassifi;</a:Comment>
 <o:Shortcut Ref="o3"/>
 </c:SessionShortcuts>
 </o:TargetModel>
-<o:TargetModel Id="o138">
+<o:TargetModel Id="o143">
 <a:ObjectID>9CF9379A-15AF-4095-80D0-BA154F3B766A</a:ObjectID>
 <a:Name>Class Diagram_1</a:Name>
 <a:Code>CLASS_DIAGRAM_1</a:Code>
