@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le :  sam. 16 jan. 2021 à 01:23
+-- Généré le :  lun. 18 jan. 2021 à 19:31
 -- Version du serveur :  10.4.10-MariaDB
 -- Version de PHP :  7.3.12
 
@@ -34,7 +34,7 @@ CREATE TABLE IF NOT EXISTS `absence` (
   `absences` decimal(8,0) DEFAULT NULL,
   `date` datetime DEFAULT NULL,
   `justification` varchar(250) DEFAULT 'Non justifiée',
-  `id_appr` int(11) DEFAULT NULL,
+  `id_appr` varchar(50) DEFAULT NULL,
   PRIMARY KEY (`id_absence`),
   KEY `FK_Association_1` (`id_appr`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
@@ -47,12 +47,12 @@ CREATE TABLE IF NOT EXISTS `absence` (
 
 DROP TABLE IF EXISTS `apprenant`;
 CREATE TABLE IF NOT EXISTS `apprenant` (
-  `id_apprenant` int(11) NOT NULL AUTO_INCREMENT,
+  `cin` varchar(50) NOT NULL,
   `id_sp` int(11) DEFAULT NULL,
   `id_salle` int(11) DEFAULT NULL,
   `id_user` int(11) DEFAULT NULL,
   `id_prom` int(11) DEFAULT NULL,
-  PRIMARY KEY (`id_apprenant`),
+  PRIMARY KEY (`cin`),
   KEY `id_sp` (`id_sp`),
   KEY `id_salle` (`id_salle`),
   KEY `id_user` (`id_user`),
@@ -126,7 +126,8 @@ CREATE TABLE IF NOT EXISTS `specialite` (
 DROP TABLE IF EXISTS `user`;
 CREATE TABLE IF NOT EXISTS `user` (
   `id_user` int(11) NOT NULL AUTO_INCREMENT,
-  `name` varchar(255) NOT NULL,
+  `nom` varchar(255) NOT NULL,
+  `prenom` varchar(250) NOT NULL,
   `password` varchar(32) NOT NULL,
   `mail` varchar(255) NOT NULL,
   `tele` varchar(10) NOT NULL,
@@ -144,7 +145,7 @@ CREATE TABLE IF NOT EXISTS `user` (
 -- Contraintes pour la table `absence`
 --
 ALTER TABLE `absence`
-  ADD CONSTRAINT `FK_Association_1` FOREIGN KEY (`id_appr`) REFERENCES `apprenant` (`id_apprenant`) ON DELETE CASCADE ON UPDATE CASCADE;
+  ADD CONSTRAINT `FK_Association_1` FOREIGN KEY (`id_appr`) REFERENCES `apprenant` (`cin`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
 -- Contraintes pour la table `apprenant`
