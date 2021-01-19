@@ -33,3 +33,12 @@ ALTER TABLE `absence`
   
   ALTER TABLE `absence`
   ADD CONSTRAINT `FK_Association_1` FOREIGN KEY (`id_appr`) REFERENCES `apprenant` (`cin`) ON DELETE CASCADE ON UPDATE CASCADE;
+  
+  
+  
+  SELECT cin,nom,prenom,nom, absences ,justification,date
+  from apprenant,specialite,absence,user 
+  where apprenant.cin=absence.id_appr 
+  and apprenant.id_sp=specialite.id_specialite
+  and user.id_user=apprenant.id_user 
+  GROUP by cin,nom,prenom,nom, absences

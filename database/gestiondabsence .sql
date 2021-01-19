@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le :  lun. 18 jan. 2021 à 19:31
+-- Généré le :  mar. 19 jan. 2021 à 08:33
 -- Version du serveur :  10.4.10-MariaDB
 -- Version de PHP :  7.3.12
 
@@ -31,13 +31,13 @@ SET time_zone = "+00:00";
 DROP TABLE IF EXISTS `absence`;
 CREATE TABLE IF NOT EXISTS `absence` (
   `id_absence` int(11) NOT NULL AUTO_INCREMENT,
-  `absences` decimal(8,0) DEFAULT NULL,
+  `absences` varchar(250) DEFAULT NULL,
   `date` datetime DEFAULT NULL,
   `justification` varchar(250) DEFAULT 'Non justifiée',
   `id_appr` varchar(50) DEFAULT NULL,
   PRIMARY KEY (`id_absence`),
   KEY `FK_Association_1` (`id_appr`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
@@ -86,9 +86,10 @@ CREATE TABLE IF NOT EXISTS `formateur` (
 DROP TABLE IF EXISTS `promo`;
 CREATE TABLE IF NOT EXISTS `promo` (
   `id_promo` int(11) NOT NULL AUTO_INCREMENT,
+  `nomPromo` varchar(250) NOT NULL,
   `anneeDePromo` datetime DEFAULT NULL,
   PRIMARY KEY (`id_promo`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
@@ -112,10 +113,10 @@ CREATE TABLE IF NOT EXISTS `salle` (
 DROP TABLE IF EXISTS `specialite`;
 CREATE TABLE IF NOT EXISTS `specialite` (
   `id_specialite` int(11) NOT NULL AUTO_INCREMENT,
-  `nom` varchar(254) DEFAULT NULL,
+  `nom_sp` varchar(254) DEFAULT NULL,
   `numbreDeModule` int(11) DEFAULT NULL,
   PRIMARY KEY (`id_specialite`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
@@ -135,7 +136,7 @@ CREATE TABLE IF NOT EXISTS `user` (
   `role` varchar(250) DEFAULT NULL,
   PRIMARY KEY (`id_user`),
   UNIQUE KEY `id_user_UNIQUE` (`id_user`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
 
 --
 -- Contraintes pour les tables déchargées
