@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le :  mar. 19 jan. 2021 à 08:33
+-- Généré le :  mar. 19 jan. 2021 à 15:40
 -- Version du serveur :  10.4.10-MariaDB
 -- Version de PHP :  7.3.12
 
@@ -32,7 +32,7 @@ DROP TABLE IF EXISTS `absence`;
 CREATE TABLE IF NOT EXISTS `absence` (
   `id_absence` int(11) NOT NULL AUTO_INCREMENT,
   `absences` varchar(250) DEFAULT NULL,
-  `date` datetime DEFAULT NULL,
+  `dateAbsence` datetime DEFAULT NULL,
   `justification` varchar(250) DEFAULT 'Non justifiée',
   `id_appr` varchar(50) DEFAULT NULL,
   PRIMARY KEY (`id_absence`),
