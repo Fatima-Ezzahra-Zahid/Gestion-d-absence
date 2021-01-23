@@ -1,5 +1,7 @@
 package org.example.DAO;
 
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import org.example.Model.Absence;
 import org.example.MysqlConnect.ConnectionClass;
 
@@ -7,7 +9,6 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
-import java.util.ArrayList;
 import java.util.List;
 
 public class FormateurDaoImp implements FormateurDao<Absence>{
@@ -17,8 +18,9 @@ public class FormateurDaoImp implements FormateurDao<Absence>{
     private ResultSet rs = null;
     private static final String FIND_ALL_STUDENTS = "SELECT * FROM `absence`";
     private static final String FIND_A_STUDENT = "SELECT * FROM `absence` WHERE id_appr = ?";
+    private static final String SHOW_ALL_STUDENT = "";
     private static final String INSERT_AN_ABSENCE = "INSERT INTO `absence` (absences, date, justification, id_appr) VALUES (?, ?, ?, ?)";
-    private static final String UPDATE_AN_ABSENCE = "UPDATE ABSENCE SET absences = ?, date = ?, justification = ? WHERE id_appr = ?";
+    private static final String UPDATE_AN_ABSENCE = "UPDATE `absence` SET absences=?, date=?, justification=? WHERE id_absence=?";
     private static final String DELETE_AN_ABSENCE = "DELETE FROM `absence` WHERE id_absence = ?";
 
 
@@ -42,7 +44,7 @@ public class FormateurDaoImp implements FormateurDao<Absence>{
         rs = st.getGeneratedKeys();
     }
 
-    // saveAbsence(new Absence("Absence!!", "1/19/2021", "Non justifier", "EE858500"));
+    // insertAbsence(new Absence("Journee", "2021-01-21", "Non justifier", "EE858533"));
 
     @Override
     public Absence getEtudiantById(String id) throws SQLException, ClassNotFoundException {
@@ -67,7 +69,7 @@ public class FormateurDaoImp implements FormateurDao<Absence>{
 
     @Override
     public List<Absence> getAllAbsence() throws SQLException, ClassNotFoundException {
-        ArrayList<Absence> etudiants = new ArrayList<>();
+        ObservableList<Absence> etudiants = FXCollections.observableArrayList();
         String query = FIND_ALL_STUDENTS;
         ps = ConnectionClass.getMyConnexion().prepareStatement(query, Statement.RETURN_GENERATED_KEYS);
         rs = ps.executeQuery();
@@ -79,25 +81,23 @@ public class FormateurDaoImp implements FormateurDao<Absence>{
             String justification = rs.getString(4);
             String id_appr = rs.getString(5);
 
-            etudiants.add(new Absence(id_absence, absence, date, justification, id_appr));
+            Absence etudiant = new Absence(id_absence, absence, date, justification, id_appr);
+            etudiants.add(etudiant);
         }
 
         return etudiants;
     }
 
     @Override
-    public boolean updateAbsence(Absence absence) throws SQLException, ClassNotFoundException {
-        boolean rowUpdated;
+    public void updateAbsence(String ab, String Dt, String jt, String id) throws SQLException, ClassNotFoundException {
         String query = UPDATE_AN_ABSENCE;
         ps = ConnectionClass.getMyConnexion().prepareStatement(query, Statement.RETURN_GENERATED_KEYS);
-        ps.setString(1,absence.getAbsence());
-        ps.setString(2, absence.getDate());
-        ps.setString(3, absence.getJustification());
-        ps.setString(4, absence.getId_appr());
+        ps.setString(1,ab);
+        ps.setString(2, Dt);
+        ps.setString(3, jt);
+        ps.setInt(4, Integer.parseInt(id));
+        ps.executeUpdate();
 
-        rowUpdated = ps.executeUpdate() > 0;
-
-        return rowUpdated;
     }
 
     @Override

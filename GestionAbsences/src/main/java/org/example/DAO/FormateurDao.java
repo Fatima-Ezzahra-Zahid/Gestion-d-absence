@@ -13,7 +13,7 @@ public interface FormateurDao<T> {
     List<T> getAllAbsence() throws SQLException, ClassNotFoundException;
 
     // Update changer l'absence au etudiant
-    boolean updateAbsence(T item) throws SQLException, ClassNotFoundException;
+    void updateAbsence(String ab, String Dt, String jt, String id) throws SQLException, ClassNotFoundException;
 
     // Delete l'absence letudiant
     boolean deleteAbsence(int id) throws SQLException, ClassNotFoundException;
