@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1500.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.UserController">
+   <children>
+      <VBox layoutX="14.0" layoutY="33.0" prefHeight="246.0" prefWidth="120.0">
+         <children>
+            <Label text="ID">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+            <Label text="Nom">
+               <padding>
+                  <Insets top="15.0" />
+               </padding>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="10.0" layoutY="10.0" text="Prenom">
+               <padding>
+                  <Insets top="15.0" />
+               </padding>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="10.0" layoutY="28.0" text="Password">
+               <padding>
+                  <Insets top="15.0" />
+               </padding>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="10.0" layoutY="45.0" text="Email">
+               <padding>
+                  <Insets top="15.0" />
+               </padding>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="10.0" layoutY="63.0" text="Telephone">
+               <padding>
+                  <Insets top="15.0" />
+               </padding>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="10.0" layoutY="80.0" text="Date de Naissence">
+               <padding>
+                  <Insets top="15.0" />
+               </padding>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="10.0" layoutY="98.0" text="Role">
+               <padding>
+                  <Insets top="15.0" />
+               </padding>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="LCin" text="CIN" visible="false">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <padding>
+                  <Insets top="15.0" />
+               </padding>
+            </Label>
+            <Label fx:id="LSpecialite" text="Specialite" visible="false">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <padding>
+                  <Insets top="15.0" />
+               </padding>
+            </Label>
+            <Label fx:id="LSale" text="Sale" visible="false">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <padding>
+                  <Insets top="15.0" />
+               </padding>
+            </Label>
+            <Label fx:id="LPromo" text="Promo" visible="false">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <padding>
+                  <Insets top="15.0" />
+               </padding>
+            </Label>
+         </children>
+      </VBox>
+      <VBox layoutX="167.0" layoutY="29.0" prefHeight="407.0" prefWidth="298.0">
+         <children>
+            <TextField fx:id="tfId">
+               <VBox.margin>
+                  <Insets bottom="5.0" top="4.0" />
+               </VBox.margin></TextField>
+            <TextField fx:id="tfNom">
+               <VBox.margin>
+                  <Insets bottom="5.0" top="4.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="tfPrenom" layoutX="10.0" layoutY="10.0">
+               <VBox.margin>
+                  <Insets bottom="5.0" top="4.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="tfPassword" layoutX="10.0" layoutY="36.0">
+               <VBox.margin>
+                  <Insets bottom="5.0" top="4.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="tfEmail" layoutX="10.0" layoutY="10.0">
+               <VBox.margin>
+                  <Insets bottom="5.0" top="4.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="tfTelephone" layoutX="10.0" layoutY="36.0">
+               <VBox.margin>
+                  <Insets bottom="5.0" top="4.0" />
+               </VBox.margin>
+            </TextField>
+            <DatePicker fx:id="tfDateNaissence" prefHeight="26.0" prefWidth="342.0">
+               <VBox.margin>
+                  <Insets bottom="5.0" top="4.0" />
+               </VBox.margin>
+            </DatePicker>
+            <ComboBox fx:id="tfRole" onAction="#handelButtonAction" prefHeight="25.0" prefWidth="298.0">
+               <VBox.margin>
+                  <Insets bottom="5.0" top="4.0" />
+               </VBox.margin></ComboBox>
+            <TextField fx:id="tfCin" layoutX="10.0" layoutY="36.0" visible="false">
+               <VBox.margin>
+                  <Insets bottom="5.0" top="4.0" />
+               </VBox.margin>
+            </TextField>
+            <ComboBox fx:id="tfSpecialite" layoutX="10.0" layoutY="256.0" prefHeight="25.0" prefWidth="298.0" visible="false">
+               <VBox.margin>
+                  <Insets bottom="5.0" top="4.0" />
+               </VBox.margin>
+            </ComboBox>
+            <ComboBox fx:id="tfSale" layoutX="10.0" layoutY="320.0" prefHeight="25.0" prefWidth="298.0" visible="false">
+               <VBox.margin>
+                  <Insets bottom="5.0" top="4.0" />
+               </VBox.margin>
+            </ComboBox>
+            <ComboBox fx:id="tfPromo" layoutX="10.0" layoutY="346.0" prefHeight="25.0" prefWidth="298.0" visible="false">
+               <VBox.margin>
+                  <Insets bottom="5.0" top="4.0" />
+               </VBox.margin>
+            </ComboBox>
+         </children>
+      </VBox>
+      <TableView fx:id="tvAdmin" layoutX="483.0" layoutY="21.0" onMouseClicked="#handelMouseAction" prefHeight="555.0" prefWidth="1010.0">
+        <columns>
+          <TableColumn fx:id="tvId" prefWidth="63.79998779296875" text="ID" />
+          <TableColumn fx:id="tvNom" prefWidth="85.800048828125" text="Nom" />
+            <TableColumn fx:id="tvPrenom" prefWidth="130.0" text="Prenom" />
+            <TableColumn fx:id="tvEmail" prefWidth="163.0" text="Email" />
+            <TableColumn fx:id="tvPassword" prefWidth="69.0" text="Password" />
+            <TableColumn fx:id="tvDateNaissence" prefWidth="158.60003662109375" text="Date de Naissence" />
+            <TableColumn fx:id="tvRole" prefWidth="159.79998779296875" text="Role" />
+            <TableColumn fx:id="tvTelephone" prefWidth="177.00006103515625" text="Telephone" />
+        </columns>
+      </TableView>
+      <VBox layoutX="86.0" layoutY="496.0" prefHeight="286.0" prefWidth="218.0">
+         <children>
+            <Button fx:id="btnAjouter" mnemonicParsing="false" onAction="#handelButtonAction" prefHeight="47.0" prefWidth="218.0" style="-fx-background-color: lime;" text="Ajouter" textFill="WHITE">
+               <VBox.margin>
+                  <Insets top="30.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnModifier" mnemonicParsing="false" onAction="#handelButtonAction" prefHeight="54.0" prefWidth="218.0" style="-fx-background-color: blue;" text="Modifier" textFill="WHITE">
+               <VBox.margin>
+                  <Insets top="30.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnSupprimer" mnemonicParsing="false" onAction="#handelButtonAction" prefHeight="54.0" prefWidth="218.0" style="-fx-background-color: red;" text="Supprimer" textFill="WHITE">
+               <VBox.margin>
+                  <Insets top="30.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
