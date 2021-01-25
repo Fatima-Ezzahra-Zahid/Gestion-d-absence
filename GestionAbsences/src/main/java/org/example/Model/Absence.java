@@ -11,9 +11,19 @@ public class Absence {
 
         }
 
-        public Absence(String absence, String date, String justification, String id_appr) {
+    @Override
+    public String toString() {
+        return "Absence{" +
+                "id_absence=" + id_absence +
+                ", absence='" + absence + '\'' +
+                ", date='" + date + '\'' +
+                ", justification='" + justification + '\'' +
+                ", id_appr='" + id_appr + '\'' +
+                '}';
+    }
+
+    public Absence(String absence, String justification, String id_appr) {
             this.absence = absence;
-            this.date = date;
             this.justification = justification;
             this.id_appr = id_appr;
         }
@@ -26,20 +36,9 @@ public class Absence {
             this.id_appr = id_appr;
         }
 
-        public Absence(String absence, String date, String justifier, int i) {
-                this.absence = absence;
-                this.date = date;
-                this.justification = justifier;
-                this.id_absence = i;
-        }
-
-    public Absence(String text, String text1, String text2, String text3, String id) {
-    }
-
-
-    public int getId_absence() {
-            return id_absence;
-        }
+        public int getId_absence() {
+                return id_absence;
+            }
 
         public void setId_absence(int id_absence) {
             this.id_absence = id_absence;

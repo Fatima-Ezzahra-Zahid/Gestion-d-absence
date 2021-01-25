@@ -19,8 +19,8 @@ public class FormateurDaoImp implements FormateurDao<Absence>{
     private static final String FIND_ALL_STUDENTS = "SELECT * FROM `absence`";
     private static final String FIND_A_STUDENT = "SELECT * FROM `absence` WHERE id_appr = ?";
     private static final String SHOW_ALL_STUDENT = "";
-    private static final String INSERT_AN_ABSENCE = "INSERT INTO `absence` (absences, date, justification, id_appr) VALUES (?, ?, ?, ?)";
-    private static final String UPDATE_AN_ABSENCE = "UPDATE `absence` SET absences=?, date=?, justification=? WHERE id_absence=?";
+    private static final String INSERT_AN_ABSENCE = "INSERT INTO `absence` (absences, justification, id_appr) VALUES (?, ?, ?)";
+    private static final String UPDATE_AN_ABSENCE = "UPDATE `absence` SET absences=?, justification=? WHERE id_absence=?";
     private static final String DELETE_AN_ABSENCE = "DELETE FROM `absence` WHERE id_absence = ?";
 
 
@@ -36,9 +36,8 @@ public class FormateurDaoImp implements FormateurDao<Absence>{
         System.out.println("creation de l'objet Statement");
 
         st.setString(1, absence.getAbsence());
-        st.setString(2, absence.getDate());
-        st.setString(3, absence.getJustification());
-        st.setString(4, absence.getId_appr());
+        st.setString(2, absence.getJustification());
+        st.setString(3, absence.getId_appr());
         st.executeUpdate();
 
         rs = st.getGeneratedKeys();
@@ -89,13 +88,12 @@ public class FormateurDaoImp implements FormateurDao<Absence>{
     }
 
     @Override
-    public void updateAbsence(String ab, String Dt, String jt, String id) throws SQLException, ClassNotFoundException {
+    public void updateAbsence(String ab, String jt, String id) throws SQLException, ClassNotFoundException {
         String query = UPDATE_AN_ABSENCE;
         ps = ConnectionClass.getMyConnexion().prepareStatement(query, Statement.RETURN_GENERATED_KEYS);
         ps.setString(1,ab);
-        ps.setString(2, Dt);
-        ps.setString(3, jt);
-        ps.setInt(4, Integer.parseInt(id));
+        ps.setString(2, jt);
+        ps.setInt(3, Integer.parseInt(id));
         ps.executeUpdate();
 
     }
