@@ -84,7 +84,7 @@ public class SpecialiteController implements Initializable {
 
     public void UpdateSpecialite() throws SQLException,ClassNotFoundException
     {
-        Sp.SaveSpecialite(txt_nomSpecialite.getText(), Integer.parseInt(txt_comp.getText()));
+        Sp.updateSpecialite(txt_nomSpecialite.getText(), Integer.parseInt(txt_comp.getText()));
         JOptionPane.showMessageDialog(null, "Modifié avec succès");
         showSpecialite();
     }

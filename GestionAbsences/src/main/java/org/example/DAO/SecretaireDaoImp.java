@@ -155,13 +155,14 @@ public class SecretaireDaoImp implements SecretaireDao {
     }
 
     @Override
-    public ObservableList<ApprenantAbsente> AfficheApprantAbsence() {
+    public ObservableList<ApprenantAbsente> AfficheApprantAbsence(String specialite) {
         ObservableList<ApprenantAbsente> ApprenantsAbsentes= FXCollections.observableArrayList();
         Connection conn = null;
         try {
 
-            String requete="SELECT cin,nom,prenom,nom_sp, absences ,justification,dateAbsence FROM apprenant,specialite,absence,user WHERE apprenant.cin=absence.id_appr AND apprenant.id_sp=specialite.id_specialite AND user.id_user=apprenant.id_user";
+            String requete="SELECT cin,nom,prenom,nom_sp, absences ,justification,dateAbsence FROM apprenant,specialite,absence,user WHERE apprenant.cin=absence.id_appr AND apprenant.id_sp=specialite.id_specialite AND user.id_user=apprenant.id_user AND  nom_sp=?";
             PreparedStatement statement = ConnectionClass.getMyConnexion().prepareStatement(requete, Statement.RETURN_GENERATED_KEYS);
+            statement.setString(1, specialite);
             ResultSet rs = statement.executeQuery();
             ApprenantAbsente apprenantAbsente;
             while (rs.next()) {

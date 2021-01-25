@@ -58,6 +58,9 @@ public class SecretaireController implements Initializable {
 
     @FXML
     private ComboBox combo_jist;
+
+    @FXML
+    private ComboBox<String> combo_spe;
     @FXML
     private TextField txt_dateabsence;
 
@@ -91,12 +94,14 @@ public class SecretaireController implements Initializable {
 
     public ObservableList<ApprenantAbsente> getAllApprenantsAbsence() throws SQLException, ClassNotFoundException{
         SecretaireDaoImp secretaire = new SecretaireDaoImp();
-        ObservableList<ApprenantAbsente> apprenantList = secretaire.AfficheApprantAbsence();
+
+        ObservableList<ApprenantAbsente> apprenantList = secretaire.AfficheApprantAbsence(combo_spe.getValue());
 
         return apprenantList;
     }
 
     public void showApprenantsAbsences() throws SQLException, ClassNotFoundException{
+        if(combo_spe.getValue() != null) {
         ObservableList<ApprenantAbsente> list = getAllApprenantsAbsence();
 
         colcin.setCellValueFactory(new PropertyValueFactory<ApprenantAbsente, String>("cin"));
@@ -108,6 +113,7 @@ public class SecretaireController implements Initializable {
         coldateAbsence.setCellValueFactory(new PropertyValueFactory<ApprenantAbsente, String>("dateAbsence"));
 
         TableAffiche.setItems(list);
+        }
     }
 
     int index = -1;
@@ -128,6 +134,8 @@ public class SecretaireController implements Initializable {
 
 
     }
+
+
 
 
 

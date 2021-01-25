@@ -18,7 +18,7 @@ public interface SecretaireDao {
 
     public void deleteById(int id_user) throws ClassNotFoundException, SQLException;
 
-    public  ObservableList<ApprenantAbsente>AfficheApprantAbsence();
+    public  ObservableList<ApprenantAbsente>AfficheApprantAbsence(String specialite);
 
     public void UpdateJustification(String justification,String cin);
 

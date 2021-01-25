@@ -26,13 +26,11 @@ public class SpecialiteDaoImp implements SpecialiteDao{
         Specialite reponse = null;
 
         String requete = "Insert into specialite (nom_sp, numbreDeModule) Values (?,?)";
-        PreparedStatement statement = ConnectionClass.getMyConnexion().prepareStatement(requete, Statement.RETURN_GENERATED_KEYS);
+        PreparedStatement statement = ConnectionClass.getMyConnexion().prepareStatement(requete);
 
         statement.setString(1,nomSpecialite);
         statement.setInt(2, nbrCompetence);
         statement.executeUpdate();
-
-        ResultSet rs = statement.getGeneratedKeys();
 
 
 
@@ -46,11 +44,12 @@ public class SpecialiteDaoImp implements SpecialiteDao{
 
         Connection conn = null;
         try{
-            String requete = "Update specialite set nom_sp= ? ,numbreDeModule=? where nom_sp = ?";
-            PreparedStatement statement = ConnectionClass.getMyConnexion().prepareStatement(requete, Statement.RETURN_GENERATED_KEYS);
+            String requete = "Update specialite set nom_sp=?,numbreDeModule=? where nom_sp=?";
+            PreparedStatement statement = ConnectionClass.getMyConnexion().prepareStatement(requete);
 
             statement.setString(1, nomSpecialite);
             statement.setInt(2, nbrCompetence);
+            statement.setString(3,nomSpecialite);
             statement.executeUpdate();
         }
         catch (SQLException | ClassNotFoundException throwables) {
