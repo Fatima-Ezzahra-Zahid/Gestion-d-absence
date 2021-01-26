@@ -161,14 +161,37 @@ public class PrimaryController implements Initializable {
             public void handle(MouseEvent mouseEvent) {
                 String idAbsence = "";
                 String idApp = "";
+                String absence = "";
+                String justife = "";
+
                 int ID = tvAbsence.getSelectionModel().getSelectedIndex();
                 if(ID <= -1) {
                     return;
                 }
                 idAbsence += colId.getCellData(ID).toString();
                 idApp += colIdAppr.getCellData(ID);
+                absence += colAbsences.getCellData(ID);
+                justife += colJustification.getCellData(ID);
                 Label lbl1 = new Label(idAbsence);
                 Label lbl2 = new Label(idApp);
+
+                if("Journée".equals(absence)){
+                    rbJournee.setSelected(true);
+                } else if ("Demi-journée".equals(absence)){
+                    rbDemiJournee.setSelected(true);
+                }else {
+                    rbJournee.setSelected(false);
+                    rbDemiJournee.setSelected(false);
+                }
+
+                if("Non justifiée".equals(justife)){
+                    rbJustifiee.setSelected(true);
+                } else if("justifiée".equals(justife)){
+                    rbNonJustifiee.setSelected(true);
+                } else {
+                    rbJustifiee.setSelected(false);
+                    rbNonJustifiee.setSelected(false);
+                }
 
                 tfID.setText(lbl1.getText());
                 tfIdAppr.setText(lbl2.getText());
