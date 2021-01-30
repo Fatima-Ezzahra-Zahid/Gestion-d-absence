@@ -1,20 +1,26 @@
 package org.example.DAO;
 
+import javafx.collections.ObservableList;
+import org.example.Model.AbUser;
+import org.example.Model.Absence;
+
 import java.sql.SQLException;
 import java.util.List;
 
-public interface FormateurDao<T> {
+public interface FormateurDao {
 
     // Create absence or list of absence
-    void insertAbsence(T item) throws SQLException, ClassNotFoundException;
+    void insertAbsence(AbUser Items) throws SQLException, ClassNotFoundException;
 
     // Read one student or list of students
-    T getEtudiantById(String id) throws SQLException, ClassNotFoundException;
-    List<T> getAllAbsence() throws SQLException, ClassNotFoundException;
+    AbUser getEtudiantById(String id) throws SQLException, ClassNotFoundException;
+    List<AbUser> getAllClass(String salle) throws SQLException, ClassNotFoundException;
 
     // Update changer l'absence au etudiant
-    void updateAbsence(String ab, String jt, String id) throws SQLException, ClassNotFoundException;
+    void updateAbsence(String absence, String id) throws SQLException, ClassNotFoundException;
 
     // Delete l'absence letudiant
-    boolean deleteAbsence(int id) throws SQLException, ClassNotFoundException;
+    boolean deleteAbsence(String id) throws SQLException, ClassNotFoundException;
+
+    public ObservableList<AbUser>AfficheInfos(String dateArg) throws SQLException, ClassNotFoundException;
 }

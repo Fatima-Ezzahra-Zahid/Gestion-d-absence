@@ -7,9 +7,14 @@ public class Absence {
         private String justification;
         private String id_appr;
 
-        public Absence() {
+        public Absence(int id_absence, String absence, String date, String id_appr) {
 
         }
+
+    public Absence(String journeeSelected, String idAppr) {
+            this.absence = journeeSelected;
+            this.id_appr = idAppr;
+    }
 
     @Override
     public String toString() {

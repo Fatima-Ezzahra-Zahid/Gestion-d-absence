@@ -30,8 +30,11 @@ import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.input.MouseEvent;
 import org.example.DAO.FormateurDaoImp;
+import org.example.Model.AbUser;
 import org.example.Model.Absence;
+import org.example.Model.User;
 import org.example.MysqlConnect.ConnectionClass;
+import org.example.Service.ServiceFormateur;
 
 import javax.swing.*;
 
@@ -43,16 +46,7 @@ import javax.swing.*;
 public class PrimaryController implements Initializable {
 
     FormateurDaoImp test = new FormateurDaoImp();
-    @FXML
-    private Label fkId;
-    @FXML
-    private Label fkAbsences;
-    @FXML
-    private Label fkDate;
-    @FXML
-    private Label fkJustification;
-    @FXML
-    private Label fkIdAppr;
+    AbUser useIt = new AbUser();
     @FXML
     private Label tfID;
     @FXML
@@ -64,25 +58,23 @@ public class PrimaryController implements Initializable {
     @FXML
     private  RadioButton rbNonJustifiee;
     @FXML
-    private TextField tfDate;
-    @FXML
-    private Label dateNow;
-    @FXML
-    private TextField tfJustification;
+    private DatePicker dateNow;
     @FXML
     private Label tfIdAppr;
     @FXML
-    private TableView<Absence> tvAbsence;
+    private TableView<AbUser> tvAbsence;
     @FXML
-    private TableColumn<Absence, Integer> colId;
+    private TableColumn<AbUser, Integer> colId;
     @FXML
-    private TableColumn<Absence, String> colAbsences;
+    private TableColumn<AbUser, String> colFirstName;
     @FXML
-    private TableColumn<Absence, String> colDate;
+    private TableColumn<AbUser, String> colLastName;
     @FXML
-    private TableColumn<Absence, String> colJustification;
+    private TableColumn<AbUser, String> colDate;
     @FXML
-    private TableColumn<Absence, String> colIdAppr;
+    private TableColumn<AbUser, String> colAbsence;
+    @FXML
+    private TableColumn<AbUser, String> colIdAppr;
     @FXML
     private Button btnInsert;
     @FXML
@@ -94,6 +86,7 @@ public class PrimaryController implements Initializable {
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
+        dateNow.setValue(LocalDate.parse(rtnTodayDate()));
         // TODO
         try {
             showAbsences();
@@ -117,12 +110,6 @@ public class PrimaryController implements Initializable {
         }
     }
 
-    public ObservableList<Absence> getAbsenceList() throws SQLException, ClassNotFoundException {
-
-        ObservableList<Absence> absenceList = (ObservableList<Absence>) test.getAllAbsence();
-        return absenceList;
-    }
-
     /* UX Methods */
     public String journeeSelected() {
         String text = "";
@@ -134,66 +121,44 @@ public class PrimaryController implements Initializable {
         return text;
     }
 
-    public String justifeSelected() {
-        String justife = "";
-        if(rbNonJustifiee.isSelected()){
-            justife += rbNonJustifiee.getText();
-        } else if (rbJustifiee.isSelected()) {
-            justife += rbJustifiee.getText();
-        }
-        return justife;
-    }
+    public String rtnTodayDate(){
 
-    public void dateSysNow(){
-        String dateText = "";
         String pattern = "yyyy-MM-dd";
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
         String date = simpleDateFormat.format(new Date());
-        Label lbl = new Label(date);
 
-        dateText += lbl.getText();
-        dateNow.setText(dateText);
+        return date;
+    }
+
+    public void dateSysNow(){
+        String dateText = rtnTodayDate();
+        dateNow.setValue(LocalDate.parse(dateText));
     }
 
     private void getSelected(){
         tvAbsence.setOnMouseClicked(new EventHandler<MouseEvent>() {
             @Override
             public void handle(MouseEvent mouseEvent) {
-                String idAbsence = "";
                 String idApp = "";
                 String absence = "";
-                String justife = "";
 
                 int ID = tvAbsence.getSelectionModel().getSelectedIndex();
                 if(ID <= -1) {
                     return;
                 }
-                idAbsence += colId.getCellData(ID).toString();
+                absence += colAbsence.getCellData(ID);
                 idApp += colIdAppr.getCellData(ID);
-                absence += colAbsences.getCellData(ID);
-                justife += colJustification.getCellData(ID);
-                Label lbl1 = new Label(idAbsence);
                 Label lbl2 = new Label(idApp);
 
                 if("Journée".equals(absence)){
                     rbJournee.setSelected(true);
                 } else if ("Demi-journée".equals(absence)){
                     rbDemiJournee.setSelected(true);
-                }else {
+                } else {
                     rbJournee.setSelected(false);
                     rbDemiJournee.setSelected(false);
                 }
 
-                if("Non justifiée".equals(justife)){
-                    rbJustifiee.setSelected(true);
-                } else if("justifiée".equals(justife)){
-                    rbNonJustifiee.setSelected(true);
-                } else {
-                    rbJustifiee.setSelected(false);
-                    rbNonJustifiee.setSelected(false);
-                }
-
-                tfID.setText(lbl1.getText());
                 tfIdAppr.setText(lbl2.getText());
             }
         });
@@ -201,31 +166,42 @@ public class PrimaryController implements Initializable {
 
     /* CRUD methods */
     public void showAbsences() throws SQLException, ClassNotFoundException{
-        ObservableList<Absence> list = getAbsenceList();
+        ObservableList<AbUser> list = test.AfficheInfos(java.sql.Date.valueOf(dateNow.getValue()).toString());
 
-        colId.setCellValueFactory(new PropertyValueFactory<Absence, Integer>("id_absence"));
-        colAbsences.setCellValueFactory(new PropertyValueFactory<Absence, String>("absence"));
-        colDate.setCellValueFactory(new PropertyValueFactory<Absence, String>("date"));
-        colJustification.setCellValueFactory(new PropertyValueFactory<Absence, String>("justification"));
-        colIdAppr.setCellValueFactory(new PropertyValueFactory<Absence, String>("id_appr"));
+        colId.setCellValueFactory(new PropertyValueFactory<AbUser, Integer>("id"));
+        colFirstName.setCellValueFactory(new PropertyValueFactory<AbUser, String>("prenom"));
+        colLastName.setCellValueFactory(new PropertyValueFactory<AbUser, String>("nom"));
+        colDate.setCellValueFactory(new PropertyValueFactory<AbUser, String>("dateAb"));
+        colAbsence.setCellValueFactory(new PropertyValueFactory<AbUser, String>("absence"));
+        colIdAppr.setCellValueFactory(new PropertyValueFactory<AbUser, String>("idAppr"));
 
         tvAbsence.setItems(list);
     }
 
+    public void showListAppr() throws SQLException, ClassNotFoundException{
+        ObservableList<AbUser> listAppr = test.getAllClass("Classe 2");
+
+        colFirstName.setCellValueFactory(new PropertyValueFactory<AbUser, String>("prenom"));
+        colLastName.setCellValueFactory(new PropertyValueFactory<AbUser, String>("nom"));
+        colIdAppr.setCellValueFactory(new PropertyValueFactory<AbUser, String>("idAppr"));
+
+        tvAbsence.setItems(listAppr);
+    }
+
     private void insertAb() throws SQLException, ClassNotFoundException {
-        test.insertAbsence(new Absence(journeeSelected(), justifeSelected(), tfIdAppr.getText()));
+        test.insertAbsence(new AbUser(colId.getCellData(tvAbsence.getSelectionModel().getSelectedIndex()), journeeSelected(), String.valueOf(dateNow.getValue()), colIdAppr.getCellData(tvAbsence.getSelectionModel().getSelectedIndex())));
         System.out.println("Insert successful");
         showAbsences();
     }
 
     private void updateAb() throws SQLException, ClassNotFoundException {
-        test.updateAbsence(journeeSelected(), justifeSelected(), tfID.getText());
+        test.updateAbsence(journeeSelected() ,tfIdAppr.getText());
         System.out.println("Update successful");
         showAbsences();
     }
 
     private void deleteAb() throws SQLException, ClassNotFoundException {
-        test.deleteAbsence(Integer.parseInt(tfID.getText()));
+        test.deleteAbsence(String.valueOf(colId.getCellData(tvAbsence.getSelectionModel().getSelectedIndex())));
         System.out.println("Delete successful");
         showAbsences();
     }
