@@ -21,16 +21,15 @@ public class ApprenantController implements Initializable {
     private  Label abs_justif;
 
 
-
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         ApprenantDao apprenantDao = new ApprenantDaoImp();
         try {
-            Apprenant apprenant = apprenantDao.selectApprenant("mail");
+            Apprenant apprenant = apprenantDao.selectApprenant("yassir@gmail.com");
             apprenant_nom.setText(apprenant.getNom()+" "+apprenant.getPrenom());
-            Apprenant apprJust = apprenantDao.selectJustifie("mail");
+            Apprenant apprJust = apprenantDao.selectJustifie("yassir@gmail.com");
             abs_justif.setText(String.valueOf(apprJust.getCountJustifie()));
-            Apprenant apprNonJust = apprenantDao.selectNonJustifie("mail");
+            Apprenant apprNonJust = apprenantDao.selectNonJustifie("yassir@gmail.com");
             abs_no_justif.setText(String.valueOf(apprNonJust.getCountNonJustifie()));
 
         } catch (SQLException throwables) {

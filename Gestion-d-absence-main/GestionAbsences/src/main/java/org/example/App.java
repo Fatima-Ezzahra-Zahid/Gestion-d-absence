@@ -5,9 +5,6 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-import org.example.DAO.ApprenantDao;
-import org.example.DAO.ApprenantDaoImp;
-import org.example.Model.Apprenant;
 
 import java.io.IOException;
 import java.sql.SQLException;
@@ -21,7 +18,7 @@ public class App extends Application {
 
     @Override
     public void start(Stage stage) throws IOException {
-        scene = new Scene(loadFXML("Apprenant"), 600, 480);
+        scene = new Scene(loadFXML("Promo"), 700, 480);
         stage.setScene(scene);
         stage.show();
     }
@@ -38,17 +35,21 @@ public class App extends Application {
     public static void main(String[] args) throws SQLException, ClassNotFoundException {
         launch();
 
-       ApprenantDao apprenantDao = new ApprenantDaoImp();
+        //ApprenantDao apprenantDao = new ApprenantDaoImp();
 
-        Apprenant appr = apprenantDao.selectNonJustifie(("yassir@gmail.com"));
+        //Apprenant appr = apprenantDao.selectNonJustifie(("yassir@gmail.com"));
 
 
         //System.out.println(appr);
-        //SalleDao salleDao = new SalleDaoImp();
+//        PromoDao promoDao = new PromoDaoImp();
+//        Promo promo = new Promo(3,"Promo3","2019-2020");
+//        Promo prom = (Promo) promoDao.getAll();
+//        System.out.println(prom);
 
-        //Salle salle = new Salle(4, "Salle4");
-
-        //salleDao.SaveSalle(salle);
+//        System.out.println("Bien");
+//
+//        PromoDaoImp promo = new PromoDaoImp();
+//        System.out.println(promo.getAll());
 
         //salleDao.getAll().forEach(System.out::println);
         //Salle sal = salleDao.getById(2);

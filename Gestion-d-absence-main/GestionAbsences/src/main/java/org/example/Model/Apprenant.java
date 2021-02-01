@@ -2,17 +2,18 @@ package org.example.Model;
 
 public class Apprenant extends User {
 
-    private char cin;
+    private String cin;
     private int id_sp;
     private int id_salle;
     private int id_prom;
     private int countJustifie;
     private int countNonJustifie;
+
     public Apprenant(){
 
     }
 
-    public Apprenant(int id_user, String nom, String prenom, String email, String password, String role, String dateNaissance, char cin, int id_sp, int id_salle, int id_prom) {
+    public Apprenant(int id_user, String nom, String prenom, String email, String password, String role, String dateNaissance, String cin, int id_sp, int id_salle, int id_prom) {
         super(id_user, nom, prenom, email, password, role, dateNaissance);
         this.cin = cin;
         this.id_sp = id_sp;
@@ -33,11 +34,11 @@ public class Apprenant extends User {
     }
 
 
-    public long getCin() {
+    public String getCin() {
         return cin;
     }
 
-    public void setCin(char cin) {
+    public void setCin(String cin) {
         this.cin = cin;
     }
 
