@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="824.0" prefWidth="1541.0" style="-fx-background-color: #000;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.Controller.PromoController">
+   <children>
+      <TableView fx:id="table_promo" layoutX="468.0" layoutY="140.0" onMouseClicked="#handelMouseAction" prefHeight="540.0" prefWidth="680.0" stylesheets="@../../style/style.css">
+        <columns>
+          <TableColumn fx:id="col_id_promo" prefWidth="75.0" text="id_promo" visible="false" />
+          <TableColumn fx:id="col_nomPromo" prefWidth="207.20001220703125" text="Nom promo" />
+            <TableColumn fx:id="col_annee" prefWidth="472.800048828125" text="Annee de promo" />
+        </columns>
+      </TableView>
+      <Pane prefHeight="824.0" prefWidth="280.0" style="-fx-background-color: #292929;">
+         <children>
+            <VBox layoutY="190.0" prefHeight="340.0" prefWidth="280.0" style="-fx-background-color: #292929;">
+               <children>
+                  <TextField fx:id="promo_id" promptText="Entrer id" visible="false" />
+                  <Label alignment="CENTER" prefHeight="17.0" prefWidth="65.0" text="id_promo" visible="false">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="17.0" prefWidth="74.0" text="Nom promo" textFill="WHITE">
+                     <font>
+                        <Font name="Agency FB" size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="20.0" />
+                     </VBox.margin>
+                  </Label>
+                  <TextField fx:id="promo_nom" prefHeight="39.0" prefWidth="280.0" promptText="Entrer nom" styleClass="formInput" stylesheets="@../../style/style.css">
+                     <VBox.margin>
+                        <Insets bottom="30.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets left="30.0" />
+                     </padding>
+                     <font>
+                        <Font name="Agency FB" size="20.0" />
+                     </font>
+                  </TextField>
+                  <Label alignment="CENTER" prefHeight="17.0" prefWidth="101.0" text="Annee de promo" textFill="WHITE">
+                     <font>
+                        <Font name="Agency FB" size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="20.0" />
+                     </VBox.margin>
+                  </Label>
+                  <DatePicker fx:id="promo_anne" prefHeight="45.0" prefWidth="279.0" promptText="Date de promo" styleClass="datePicker" stylesheets="@../../style/style.css" />
+               </children>
+            </VBox>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="40.0" layoutY="56.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Whitelogo.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="465.0" layoutY="620.0" prefHeight="200.0" prefWidth="680.0">
+         <children>
+            <Button fx:id="promo_ajout" alignment="CENTER" layoutX="24.0" layoutY="88.0" mnemonicParsing="false" onAction="#ajouterPromo" prefHeight="40.0" prefWidth="180.0" styleClass="addBtn" stylesheets="@../../style/style.css" text="Ajouter" textFill="WHITE">
+               <font>
+                  <Font name="Agency FB" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="promo_update" alignment="CENTER" layoutX="250.0" layoutY="88.0" mnemonicParsing="false" onAction="#updatePromo" prefHeight="40.0" prefWidth="180.0" styleClass="updateBtn" stylesheets="@../../style/style.css" text="Modifier" textFill="WHITE">
+               <font>
+                  <Font name="Agency FB" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="promo_delete" layoutX="476.0" layoutY="88.0" mnemonicParsing="false" onAction="#supprimerPromo" prefHeight="40.0" prefWidth="180.0" styleClass="deleteBtn" stylesheets="@../../style/style.css" text="Supprimer" textFill="WHITE">
+               <font>
+                  <Font name="Agency FB" size="20.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <Pane layoutX="1261.0" prefHeight="824.0" prefWidth="280.0" style="-fx-background-color: #292929;">
+         <children>
+            <Button fx:id="btnBack" layoutX="94.0" layoutY="265.0" mnemonicParsing="false" onAction="#ActionBtn" prefHeight="38.0" prefWidth="98.0" styleClass="logoutBtn" stylesheets="@../../style/style.css" text="Revenir" textFill="WHITE">
+               <font>
+                  <Font name="Agency FB Bold" size="20.0" />
+               </font>
+            </Button>
+            <FontAwesomeIcon fill="WHITE" glyphName="CIRCLE" layoutX="102.0" layoutY="158.0" size="8em" />
+            <FontAwesomeIcon glyphName="USER" layoutX="120.0" layoutY="147.0" size="5em" text="" />
+            <Label layoutX="121.0" layoutY="182.0" text="ADMIN" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Agency FB" size="22.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

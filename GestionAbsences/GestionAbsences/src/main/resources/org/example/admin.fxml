@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="824.0" prefWidth="1541.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.Controller.UserController">
+   <children>
+      <TableView fx:id="tvAdmin" layoutX="305.0" layoutY="151.0" onMouseClicked="#handelMouseAction" prefHeight="572.0" prefWidth="924.0" stylesheets="@../../style/style.css">
+        <columns>
+          <TableColumn fx:id="tvNom" prefWidth="114.0" styleClass="TableColumn" text="NOM" />
+            <TableColumn fx:id="tvPrenom" prefWidth="120.0" styleClass="TableColumn" text="PRENOM" />
+            <TableColumn fx:id="tvEmail" prefWidth="163.20001220703125" styleClass="TableColumn">
+               <graphic>
+                  <FontAwesomeIcon fill="WHITE" glyphName="ENVELOPE" size="1.5em" />
+               </graphic></TableColumn>
+            <TableColumn fx:id="tvDateNaissence" prefWidth="164.79998779296875" styleClass="TableColumn">
+               <graphic>
+                  <FontAwesomeIcon fill="WHITE" glyphName="CALENDAR" size="1.5em" />
+               </graphic></TableColumn>
+            <TableColumn fx:id="tvRole" prefWidth="180.0" styleClass="TableColumn">
+               <graphic>
+                  <FontAwesomeIcon fill="WHITE" glyphName="USER" size="1.5em" />
+               </graphic></TableColumn>
+            <TableColumn fx:id="tvTelephone" minWidth="0.0" prefWidth="184.0" styleClass="TableColumn">
+               <graphic>
+                  <FontAwesomeIcon fill="WHITE" glyphName="PHONE" size="1.5em" />
+               </graphic></TableColumn>
+            <TableColumn fx:id="tvId" minWidth="0.0" prefWidth="0.0" styleClass="TableColumn" />
+        </columns>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </TableView>
+      <Pane prefHeight="824.0" prefWidth="280.0" style="-fx-background-color: #292929;">
+         <children>
+            <VBox layoutX="14.0" layoutY="230.0" prefHeight="501.0" prefWidth="253.0">
+               <children>
+                  <TextField fx:id="tfNom" prefHeight="61.0" prefWidth="327.0" promptText="Nom" styleClass="formInput" stylesheets="@../../style/style.css">
+                     <VBox.margin>
+                        <Insets bottom="5.0" top="5.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets left="30.0" />
+                     </padding>
+                     <font>
+                        <Font name="Agency FB" size="20.0" />
+                     </font></TextField>
+                  <TextField fx:id="tfPrenom" prefHeight="61.0" prefWidth="327.0" promptText="Prenom" styleClass="formInput" stylesheets="@../../style/style.css">
+                     <VBox.margin>
+                        <Insets bottom="5.0" top="5.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets left="30.0" />
+                     </padding>
+                     <font>
+                        <Font name="Agency FB" size="20.0" />
+                     </font></TextField>
+                  <TextField fx:id="tfEmail" prefHeight="61.0" prefWidth="327.0" promptText="Email" styleClass="formInput" stylesheets="@../../style/style.css">
+                     <VBox.margin>
+                        <Insets bottom="5.0" top="5.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets left="30.0" />
+                     </padding>
+                     <font>
+                        <Font name="Agency FB" size="20.0" />
+                     </font>
+                  </TextField>
+                  <PasswordField fx:id="tfPassword" prefHeight="61.0" prefWidth="327.0" promptText="Mot de passe" styleClass="formInput" stylesheets="@../../style/style.css">
+                     <VBox.margin>
+                        <Insets bottom="5.0" top="5.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets left="30.0" />
+                     </padding>
+                     <font>
+                        <Font name="Agency FB" size="20.0" />
+                     </font>
+                  </PasswordField>
+                  <DatePicker fx:id="tfDateNaissence" prefHeight="61.0" prefWidth="327.0" promptText="Date de naissence" showWeekNumbers="true" styleClass="datePicker" stylesheets="@../../style/style.css">
+                     <VBox.margin>
+                        <Insets bottom="5.0" top="5.0" />
+                     </VBox.margin>
+                  </DatePicker>
+                  <TextField fx:id="tfTelephone" prefHeight="61.0" prefWidth="327.0" promptText="Telephone" styleClass="formInput" stylesheets="@../../style/style.css">
+                     <VBox.margin>
+                        <Insets bottom="5.0" top="5.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets left="30.0" />
+                     </padding>
+                     <font>
+                        <Font name="Agency FB" size="20.0" />
+                     </font>
+                  </TextField>
+                  <ComboBox fx:id="tfRole" onAction="#handelButtonAction" prefHeight="61.0" prefWidth="327.0" promptText="Role" styleClass="formInput" stylesheets="@../../style/style.css">
+                     <VBox.margin>
+                        <Insets bottom="5.0" top="5.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets left="30.0" />
+                     </padding>
+                  </ComboBox>
+                  <ComboBox fx:id="tfSpecialite" prefHeight="61.0" prefWidth="327.0" promptText="Specialite" styleClass="formInput" stylesheets="@../../style/style.css" visible="false">
+                     <VBox.margin>
+                        <Insets bottom="5.0" top="5.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets left="30.0" />
+                     </padding>
+                  </ComboBox>
+                  <ComboBox fx:id="tfSale" prefHeight="61.0" prefWidth="327.0" promptText="Sale" styleClass="formInput" stylesheets="@../../style/style.css" visible="false">
+                     <VBox.margin>
+                        <Insets bottom="5.0" top="5.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets left="30.0" />
+                     </padding>
+                  </ComboBox>
+                  <ComboBox fx:id="tfPromo" prefHeight="61.0" prefWidth="327.0" promptText="Promo" styleClass="formInput" stylesheets="@../../style/style.css" visible="false">
+                     <VBox.margin>
+                        <Insets bottom="5.0" top="5.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets left="30.0" />
+                     </padding>
+                  </ComboBox>
+                  <TextField fx:id="tfCin" prefHeight="61.0" prefWidth="327.0" promptText="CIN" styleClass="formInput" stylesheets="@../../style/style.css" visible="false">
+                     <VBox.margin>
+                        <Insets bottom="5.0" top="5.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets left="30.0" />
+                     </padding>
+                     <font>
+                        <Font name="Agency FB" size="20.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </VBox>
+            <TextField fx:id="tfId" disable="true" layoutX="167.0" layoutY="13.0" visible="false" />
+            <ImageView fx:id="logoImg" fitHeight="61.0" fitWidth="263.0" layoutX="43.0" layoutY="54.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Whitelogo.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <TextField fx:id="filterField" layoutX="473.0" layoutY="41.0" prefHeight="40.0" prefWidth="648.0" promptText="Recherche " styleClass="searchBar" stylesheets="@../../style/style.css">
+         <font>
+            <Font name="Agency FB" size="24.0" />
+         </font>
+         <padding>
+            <Insets left="50.0" />
+         </padding></TextField>
+      <Pane layoutX="1261.0" prefHeight="824.0" prefWidth="280.0" style="-fx-background-color: #292929;">
+         <children>
+            <VBox alignment="TOP_CENTER" layoutX="29.0" layoutY="412.0" prefHeight="213.0" prefWidth="254.0">
+               <children>
+                  <Button fx:id="btnSpecialite" mnemonicParsing="false" onAction="#handelButtonAction" prefHeight="50.0" prefWidth="263.0" styleClass="plusBtn" stylesheets="@../../style/style.css" text="CRÉER UNE  SPÉCIALITÉ" textFill="WHITE">
+                     <font>
+                        <Font name="Agency FB Bold" size="20.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="20.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="btnSalle" mnemonicParsing="false" onAction="#handelButtonAction" prefHeight="50.0" prefWidth="267.0" styleClass="plusBtn" stylesheets="@../../style/style.css" text="CRÉER UNE CLASSE" textFill="WHITE">
+                     <font>
+                        <Font name="Agency FB Bold" size="20.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="20.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="btnPromo" mnemonicParsing="false" onAction="#handelButtonAction" prefHeight="50.0" prefWidth="266.0" styleClass="plusBtn" stylesheets="@../../style/style.css" text="CRÉER UNE PROMO" textFill="WHITE">
+                     <font>
+                        <Font name="Agency FB Bold" size="20.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+            <Button fx:id="btnBack" layoutX="79.0" layoutY="225.0" mnemonicParsing="false" onAction="#btnBack" prefHeight="44.0" prefWidth="149.0" styleClass="logoutBtn" stylesheets="@../../style/style.css" text="Déconnecter" textFill="WHITE">
+               <font>
+                  <Font name="Agency FB" size="23.0" />
+               </font>
+            </Button>
+            <FontAwesomeIcon fill="WHITE" glyphName="CIRCLE" layoutX="114.0" layoutY="122.0" size="8em" />
+            <FontAwesomeIcon glyphName="USER" layoutX="132.0" layoutY="111.0" size="5em" text="" />
+            <Label layoutX="133.0" layoutY="146.0" text="ADMIN" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Agency FB" size="22.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="377.0" layoutY="723.0" prefHeight="84.0" prefWidth="746.0">
+         <children>
+            <Button fx:id="btnAjouter" alignment="CENTER" layoutX="48.0" layoutY="22.0" mnemonicParsing="false" onAction="#handelButtonAction" prefHeight="40.0" prefWidth="180.0" styleClass="addBtn" stylesheets="@../../style/style.css" text="AJOUTER" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnModifier" alignment="CENTER" layoutX="283.0" layoutY="22.0" mnemonicParsing="false" onAction="#handelButtonAction" prefHeight="40.0" prefWidth="180.0" styleClass="updateBtn" stylesheets="@../../style/style.css" text="MODIFIER" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnSupprimer" alignment="CENTER" layoutX="518.0" layoutY="22.0" mnemonicParsing="false" onAction="#handelButtonAction" prefHeight="40.0" prefWidth="180.0" styleClass="deleteBtn" stylesheets="@../../style/style.css" text="SUPPRIMER" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <FontAwesomeIcon fill="WHITE" glyphName="PLUS" layoutX="180.0" layoutY="52.0" size="2em" />
+            <FontAwesomeIcon fill="WHITE" glyphName="REFRESH" layoutX="423.0" layoutY="51.0" size="2em" />
+            <FontAwesomeIcon fill="WHITE" glyphName="TRASH" layoutX="661.0" layoutY="51.0" size="2em" />
+         </children>
+      </Pane>
+      <FontAwesomeIcon fill="#ffffffae" glyphName="SEARCH" layoutX="491.0" layoutY="69.0" selectionEnd="2" selectionStart="2" size="2em" />
+   </children>
+</AnchorPane>

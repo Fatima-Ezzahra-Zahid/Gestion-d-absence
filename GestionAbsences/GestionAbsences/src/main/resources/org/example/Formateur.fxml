@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="824.0" prefWidth="1541.0" style="-fx-background-color: #000;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.Controller.FormateurController">
+    <children>
+      <Pane layoutX="1262.0" prefHeight="824.0" prefWidth="280.0" style="-fx-background-color: #292929;">
+         <children>
+            <VBox layoutX="18.0" layoutY="429.0" prefHeight="202.0" prefWidth="266.0">
+               <children>
+                  <Button fx:id="btnListAppr" mnemonicParsing="false" onAction="#showListAppr" prefHeight="50.0" prefWidth="263.0" styleClass="plusBtn" stylesheets="@../../style/style.css" text="LISTE DES ÉTUDIANTS" textAlignment="CENTER" textFill="WHITE">
+                     <VBox.margin>
+                        <Insets bottom="20.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="Agency FB Bold" size="20.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnListAbs" mnemonicParsing="false" onAction="#showAbsences" prefHeight="50.0" prefWidth="263.0" styleClass="plusBtn" stylesheets="@../../style/style.css" text="LISTE D'ABSENCE" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Agency FB Bold" size="20.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+            <FontAwesomeIcon fill="WHITE" glyphName="CIRCLE" layoutX="108.0" layoutY="148.0" size="8em" />
+            <FontAwesomeIcon glyphName="USER" layoutX="126.0" layoutY="137.0" size="5em" text="" />
+            <Label layoutX="108.0" layoutY="172.0" text="FORMATEUR" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Agency FB" size="22.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnback" layoutX="77.0" layoutY="232.0" mnemonicParsing="false" onAction="#ActionBack" prefHeight="44.0" prefWidth="134.0" styleClass="logoutBtn" stylesheets="@../../style/style.css" text="Déconnecter" textFill="WHITE">
+               <font>
+                  <Font name="Agency FB" size="23.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+        <TableView fx:id="tvAbsence" layoutX="336.0" layoutY="127.0" prefHeight="570.0" prefWidth="867.0" stylesheets="@../../style/style.css">
+            <columns>
+                <TableColumn fx:id="colId" prefWidth="141.5999755859375" text="Id" visible="false" />
+                <TableColumn fx:id="colFirstName" prefWidth="144.80001831054688" text="Prenom" />
+                <TableColumn fx:id="colLastName" prefWidth="157.60000610351562" text="Nom" />
+                <TableColumn fx:id="colDate" prefWidth="176.79998779296875" text="Date" />
+            <TableColumn fx:id="colAbsence" minWidth="20.0" prefWidth="204.79998779296875" text="Absence" />
+                <TableColumn fx:id="colIdAppr" prefWidth="185.5999755859375" text="Id_appr" />
+            </columns>
+        </TableView>
+      <Pane layoutX="445.0" layoutY="742.0" prefHeight="63.0" prefWidth="638.0">
+         <children>
+              <Button fx:id="btnUpdate" layoutX="232.0" layoutY="12.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="40.0" prefWidth="180.0" styleClass="updateBtn" stylesheets="@../../style/style.css" text="UPDATE" textFill="WHITE">
+               <font>
+                  <Font name="Agency FB Bold" size="18.0" />
+               </font>
+            </Button>
+              <Button fx:id="btnDelete" layoutX="437.0" layoutY="12.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="40.0" prefWidth="180.0" styleClass="deleteBtn" stylesheets="@../../style/style.css" text="DELETE" textFill="WHITE">
+               <font>
+                  <Font name="Agency FB Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnInsert" layoutX="21.0" layoutY="12.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="40.0" prefWidth="180.0" styleClass="addBtn" stylesheets="@../../style/style.css" text="INSERT" textFill="WHITE">
+               <font>
+                  <Font name="Agency FB Bold" size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <Pane layoutX="-3.0" prefHeight="824.0" prefWidth="280.0" style="-fx-background-color: #292929;">
+         <children>
+              <VBox layoutX="16.0" layoutY="235.0" prefHeight="219.0" prefWidth="75.0" spacing="22.0">
+                  <children>
+                      <Label fx:id="fkAbsences" text="Absences" textFill="WHITE">
+                          <font>
+                              <Font name="Agency FB" size="18.0" />
+                          </font>
+                     <VBox.margin>
+                        <Insets bottom="35.0" />
+                     </VBox.margin>
+                      </Label>
+                      <Label fx:id="fkDate" prefHeight="0.0" prefWidth="30.0" text="Date" textFill="WHITE">
+                          <font>
+                              <Font name="Agency FB" size="18.0" />
+                          </font>
+                      </Label>
+                      <Label fx:id="fkIdAppr" prefHeight="26.0" prefWidth="23.0" text="CIN" visible="false">
+                          <font>
+                              <Font size="14.0" />
+                          </font>
+                      </Label>
+                  </children>
+              </VBox>
+              <VBox layoutX="91.0" layoutY="235.0" prefHeight="193.0" prefWidth="186.0" spacing="23.0">
+                  <children>
+                      <FlowPane prefHeight="58.0" prefWidth="279.0">
+                          <children>
+                              <RadioButton fx:id="rbJournee" mnemonicParsing="false" prefHeight="24.0" prefWidth="102.0" selected="true" stylesheets="@../../style/style.css" text="Journée" textFill="WHITE">
+                                  <toggleGroup>
+                                      <ToggleGroup fx:id="absences" />
+                                  </toggleGroup>
+                           <font>
+                              <Font name="Agency FB" size="18.0" />
+                           </font>
+                           <FlowPane.margin>
+                              <Insets bottom="10.0" />
+                           </FlowPane.margin>
+                              </RadioButton>
+                              <RadioButton fx:id="rbDemiJournee" mnemonicParsing="false" text="Demi-journée" textFill="WHITE" toggleGroup="$absences">
+                           <font>
+                              <Font name="Agency FB" size="18.0" />
+                           </font>
+                        </RadioButton>
+                          </children>
+                      </FlowPane>
+                  <DatePicker fx:id="dateNow" onAction="#showAbsences" prefHeight="38.0" prefWidth="174.0" styleClass="datePicker" stylesheets="@../../style/style.css" />
+                      <Label fx:id="tfIdAppr" visible="false" />
+                  <Label fx:id="tfID" layoutX="10.0" layoutY="100.0" visible="false" />
+                  </children>
+              </VBox>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="43.0" layoutY="54.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Whitelogo.png" />
+               </image>
+            </ImageView>
+            <ComboBox fx:id="comb_sp" layoutX="3.0" layoutY="467.0" onAction="#showListAppr" prefHeight="50.0" prefWidth="236.0" promptText="Select la Specialité" styleClass="plusBtn2" stylesheets="@../../style/style.css" />
+         </children>
+      </Pane>
+
+    </children>
+</AnchorPane>

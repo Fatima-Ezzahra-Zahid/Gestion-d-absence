@@ -1,0 +1,2 @@
+INDEX VERSION 1.131+C:\Users\Youcode\Desktop\GestionAbsences\GestionAbsences\.metadata\.plugins\org.eclipse.jdt.core
+1067094681.index
