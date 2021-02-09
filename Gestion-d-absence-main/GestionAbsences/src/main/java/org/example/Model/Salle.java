@@ -1,11 +1,11 @@
 package org.example.Model;
 
 public class Salle {
-
     private int id_salle;
     private String nomDeSalle;
 
-    public Salle() {
+    public Salle(){
+
     }
 
     public Salle(int id_salle, String nomDeSalle) {
@@ -27,13 +27,5 @@ public class Salle {
 
     public void setNomDeSalle(String nomDeSalle) {
         this.nomDeSalle = nomDeSalle;
-    }
-
-    @Override
-    public String toString() {
-        return "Salle{" +
-                "id_salle=" + id_salle +
-                ", nomDeSalle='" + nomDeSalle + '\'' +
-                '}';
     }
 }

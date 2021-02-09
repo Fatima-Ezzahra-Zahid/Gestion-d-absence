@@ -17,7 +17,7 @@ public class SalleDaoImp implements SalleDao {
         Connection conn = ConnectionClass.getMyConnexion();
 
         List<Salle> salles = new LinkedList<>();
-        String query = "SELECT * FROM salle;";
+        String query = "SELECT * FROM salle";
         try(PreparedStatement preparedStatement = conn.prepareStatement(query)){
 
             ResultSet resultSet = preparedStatement.executeQuery();
@@ -65,15 +65,13 @@ public class SalleDaoImp implements SalleDao {
     }
 
     @Override
-    public void SaveSalle(Salle salle) throws ClassNotFoundException, SQLException {
+    public void SaveSalle(String nomDeSalle) throws ClassNotFoundException, SQLException {
         Connection conn = ConnectionClass.getMyConnexion();
 
-        String query = "INSERT INTO salle (id_salle, nomDeSalle) VALUES (?, ?);";
+        String query = "INSERT INTO salle (nomDeSalle) VALUES (?);";
         try(PreparedStatement preparedStatement = conn.prepareStatement(query)){
 
-
-            preparedStatement.setInt(1, salle.getId_salle());
-            preparedStatement.setString(2, String.valueOf(salle.getNomDeSalle()));
+            preparedStatement.setString(1, nomDeSalle);
 
             preparedStatement.executeUpdate();
         } catch (SQLException throwables) {
@@ -89,14 +87,14 @@ public class SalleDaoImp implements SalleDao {
     }
 
     @Override
-    public void updateSalle(Salle salle) throws ClassNotFoundException, SQLException {
+    public void updateSalle(int id, String nomDeSalle) throws ClassNotFoundException, SQLException {
         Connection conn = ConnectionClass.getMyConnexion();
 
-        String query = "UPDATE salle SET nomDeSalle = ? WHERE id_salle = ?;";
+        String query = "UPDATE salle SET nomDeSalle = ? WHERE id_salle = ?";
         try(PreparedStatement preparedStatement = conn.prepareStatement(query)){
 
-            preparedStatement.setString(1, salle.getNomDeSalle());
-            preparedStatement.setInt(2, salle.getId_salle());
+            preparedStatement.setString(1, nomDeSalle);
+            preparedStatement.setInt(2, id);
 
 
             preparedStatement.executeUpdate();

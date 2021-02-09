@@ -11,9 +11,9 @@ public interface SalleDao {
 
     public Salle getById(int id_salle) throws ClassNotFoundException, SQLException;
 
-    public void SaveSalle(Salle salle) throws ClassNotFoundException, SQLException;
+    public void SaveSalle(String nomDeSalle) throws ClassNotFoundException, SQLException;
 
-    public void updateSalle(Salle salle)throws ClassNotFoundException, SQLException;
+    public void updateSalle(int id, String nomDeSalle)throws ClassNotFoundException, SQLException;
 
     public void deleteById(int id_salle) throws ClassNotFoundException, SQLException;
 

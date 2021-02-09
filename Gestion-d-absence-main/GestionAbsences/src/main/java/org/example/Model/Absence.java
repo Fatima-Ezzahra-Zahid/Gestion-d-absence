@@ -19,10 +19,6 @@ public class Absence{
         this.id_appr = id_appr;
     }
 
-    public Absence(String justification) {
-        this.justification = justification;
-    }
-
     public int getId_absence() {
         return id_absence;
     }

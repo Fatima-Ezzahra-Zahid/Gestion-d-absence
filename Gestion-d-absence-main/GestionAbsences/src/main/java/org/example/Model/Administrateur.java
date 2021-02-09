@@ -1,4 +1,4 @@
 package org.example.Model;
 
-public class Administrateur extends User {
+public class Administrateur extends Users {
 }

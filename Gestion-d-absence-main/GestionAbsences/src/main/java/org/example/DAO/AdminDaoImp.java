@@ -1,4 +1,5 @@
 package org.example.DAO;
 
-public class AdminDaoImp {
+public class AdminDaoImp implements AdminDao{
+
 }
