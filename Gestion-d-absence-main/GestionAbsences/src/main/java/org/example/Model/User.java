@@ -1,6 +1,6 @@
 package org.example.Model;
 
-public class Users {
+public class User {
 
     private int id_user;
     private String nom;
@@ -8,17 +8,16 @@ public class Users {
     private String email;
     private String password;
     private String role;
-    private String tele;
     private String DateNaissance;
 
-    public Users()
+    public User()
     {
 
     }
-    public Users(int id_user, String nom, String prenom, String password, String email, String tele, String dateNaissance, String role) {
+
+    public User(int id_user, String nom, String prenom, String email, String password, String role, String dateNaissance) {
         this.id_user = id_user;
         this.nom = nom;
-        this.tele = tele;
         this.prenom = prenom;
         this.email = email;
         this.password = password;
@@ -26,12 +25,9 @@ public class Users {
         DateNaissance = dateNaissance;
     }
 
-    public String getTele() {
-        return tele;
-    }
-
-    public void setTele(String tele) {
-        this.tele = tele;
+    public User(String nom, String prenom) {
+        this.nom = nom;
+        this.prenom = prenom;
     }
 
     public int getId_user() {
@@ -88,5 +84,13 @@ public class Users {
 
     public void setDateNaissance(String dateNaissance) {
         DateNaissance = dateNaissance;
+    }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "nom='" + nom + '\'' +
+                ", prenom='" + prenom + '\'' +
+                '}';
     }
 }

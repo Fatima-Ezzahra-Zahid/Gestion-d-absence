@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?PowerDesigner signature="Workspace" version="15.1.0.2850"?>
+<!-- Veuillez ne pas modifier ce fichier -->
+
+<Workspace>
+	<Local Expanded="Yes">
+		<Model Expanded="Yes" ID="{3E821D0D-0C4C-4148-89C6-04B52D9DF047}" Name="Class Diagram_1" Type="{18112060-1A4B-11D1-83D9-444553540000}" URL="umlApp.moo"/>
+		<Model Expanded="Yes" ID="{2604F08B-A7EC-41B2-A5C8-895E7F1E7D0E}" Name="Class Diagram_1" Type="{CDE44E21-9669-11D1-9914-006097355D9B}" URL="Class Diagram_1.mpd"/>
+	</Local>
+	<BrowserModule Name="Référentiel"/>
+</Workspace>
