@@ -9,14 +9,21 @@ public class User {
     private String password;
     private String role;
     private String DateNaissance;
+<<<<<<< HEAD
     private String tele;
+=======
+>>>>>>> main
 
     public User()
     {
 
     }
 
+<<<<<<< HEAD
     public User(int id_user, String nom, String prenom, String email, String password, String role, String dateNaissance, String tele) {
+=======
+    public User(int id_user, String nom, String prenom, String email, String password, String role, String dateNaissance) {
+>>>>>>> main
         this.id_user = id_user;
         this.nom = nom;
         this.prenom = prenom;
@@ -24,7 +31,10 @@ public class User {
         this.password = password;
         this.role = role;
         DateNaissance = dateNaissance;
+<<<<<<< HEAD
         this.tele = tele;
+=======
+>>>>>>> main
     }
 
     public int getId_user() {
@@ -82,6 +92,7 @@ public class User {
     public void setDateNaissance(String dateNaissance) {
         DateNaissance = dateNaissance;
     }
+<<<<<<< HEAD
 
     public String getTele() {
         return tele;
@@ -90,4 +101,6 @@ public class User {
     public void setTele(String tele) {
         this.tele = tele;
     }
+=======
+>>>>>>> main
 }
