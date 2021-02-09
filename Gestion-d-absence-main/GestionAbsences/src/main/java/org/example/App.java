@@ -5,6 +5,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+
 import java.io.IOException;
 
 /**
@@ -16,14 +17,12 @@ public class App extends Application {
 
     @Override
     public void start(Stage stage) throws IOException {
-        scene = new Scene(loadFXML("admin"));
+        scene = new Scene(loadFXML("Formateur"));
         stage.setScene(scene);
-        stage.setResizable(false);
         stage.show();
     }
 
-
-    public static void setRoot(String fxml) throws IOException {
+    static void setRoot(String fxml) throws IOException {
         scene.setRoot(loadFXML(fxml));
     }
 
@@ -32,7 +31,8 @@ public class App extends Application {
         return fxmlLoader.load();
     }
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
         launch();
     }
+
 }
