@@ -37,6 +37,11 @@ public class User {
 >>>>>>> main
     }
 
+    public User(String nom, String prenom) {
+        this.nom = nom;
+        this.prenom = prenom;
+    }
+
     public int getId_user() {
         return id_user;
     }
