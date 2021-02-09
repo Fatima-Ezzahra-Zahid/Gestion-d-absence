@@ -13,7 +13,7 @@ public class ApprenantDaoImp implements ApprenantDao {
     public Apprenant selectApprenant(String email) throws SQLException, ClassNotFoundException {
         Connection conn = ConnectionClass.getMyConnexion();
 
-        String query = "Select nom, prenom From user WHERE mail=? AND role='Apprenant';";
+        String query = "Select nom, prenom From User WHERE mail=?;";
         try (PreparedStatement preparedStatement = conn.prepareStatement(query)){
             preparedStatement.setString(1, email);
             ResultSet resultSet = preparedStatement.executeQuery();
@@ -37,9 +37,11 @@ public class ApprenantDaoImp implements ApprenantDao {
             preparedStatement.setString(1, email);
             ResultSet resultSet = preparedStatement.executeQuery();
             if(resultSet.next()){
+
                 Apprenant apprenant = new Apprenant(resultSet.getInt("cn"), true);
                 return apprenant;
             }
+
         } catch (SQLException ex) {
             ex.printStackTrace();
         }
