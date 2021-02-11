@@ -5,3 +5,4 @@
 
 //Dashbord Formateur
 
+Gestion-d-absence/image/formateur.jpg
